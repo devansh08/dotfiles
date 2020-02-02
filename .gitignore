@@ -1,0 +1,10 @@
+*
+
+!.gitignore
+!.zshrc
+!.zsh_aliases
+!.vimrc
+!.bashrc
+!.bash_aliases
+!.git_aliases
+!.xinitrc.xfce

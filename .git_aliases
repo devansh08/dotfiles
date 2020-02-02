@@ -1,0 +1,6 @@
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gb='git branch'
+alias gl='git log'
+alias gpom='git push origin master'
