@@ -1,4 +1,8 @@
 if [[ ! -o login ]]; then
+	if [[ $(($RANDOM/3276)) -eq $(($RANDOM/3276)) ]]; then
+		echo "bruh";
+	fi
+
 	# If you come from bash you might have to change your $PATH.
 	# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
