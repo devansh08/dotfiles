@@ -1,5 +1,5 @@
 if [[ ! -o login ]]; then
-	if [[ $(($RANDOM/3276)) -eq $(($RANDOM/3276)) ]]; then
+	if [[ $RANDOM -eq $RANDOM ]]; then
 		echo "bruh";
 	fi
 
