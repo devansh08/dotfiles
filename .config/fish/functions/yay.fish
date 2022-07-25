@@ -1,4 +1,8 @@
-function yay --description 'Wraps yay to add another option to download older package versions from cache or Arch Linux Archive (ALA)'
+function yay --description 'Wraps yay to - add another option to download older package versions from cache or Arch Linux Archive (ALA); start ncat listener to redirect to ungoogled-chromium db'
+
+	set -l TEMP_FILE (mktemp)
+    pkill -9 ncat
+    ncat -lp 8888 --keep-open --output $TEMP_FILE -e "/home/devansh/Scripts/ungoogled-chromium-yay-handler.sh $TEMP_FILE" &
 
     set -l ORIG_ARGS $argv
 
@@ -91,4 +95,7 @@ function yay --description 'Wraps yay to add another option to download older pa
     else
         /usr/bin/yay $ORIG_ARGS
     end
+
+    pkill -9 ncat
+	/bin/rm $TEMP_FILE
 end
