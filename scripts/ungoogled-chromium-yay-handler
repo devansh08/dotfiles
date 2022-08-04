@@ -1,0 +1,24 @@
+#!/bin/bash
+
+OUTPUT_FILE=$1
+
+echo "HTTP/2 302 Found"
+
+req=$(grep -aE "GET /.* HTTP" $OUTPUT_FILE | cut -d ' ' -f 2)
+
+if [[ "$req" == "/custom-ungoogled-chromium.db" ]]; then
+	echo "Location: https://download.opensuse.org/repositories/home:/ungoogled_chromium/Arch/x86_64/home_ungoogled_chromium_Arch.db"
+elif [[ "$req" == "/custom-ungoogled-chromium.db.sig" ]]; then
+	echo "Location: https://download.opensuse.org/repositories/home:/ungoogled_chromium/Arch/x86_64/home_ungoogled_chromium_Arch.db.sig"
+#elif [[ "$req" == "/ungoogled-chromium-103.0.5060.134-1-x86_64.pkg.tar.zst" ]]; then
+#	echo "Location: https://download.opensuse.org/repositories/home:/ungoogled_chromium/Arch/x86_64/ungoogled-chromium-103.0.5060.134-1-x86_64.pkg.tar.zst"
+#elif [[ "$req" == "/ungoogled-chromium-103.0.5060.134-1-x86_64.pkg.tar.zst.sig" ]]; then
+#	echo "Location: https://download.opensuse.org/repositories/home:/ungoogled_chromium/Arch/x86_64/ungoogled-chromium-103.0.5060.134-1-x86_64.pkg.tar.zst.sig"
+else
+	echo "Location: https://download.opensuse.org/repositories/home:/ungoogled_chromium/Arch/x86_64$req"
+fi
+
+echo ""
+
+echo "" > $OUTPUT_FILE
+

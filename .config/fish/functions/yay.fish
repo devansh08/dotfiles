@@ -2,7 +2,7 @@ function yay --description 'Wraps yay to - add another option to download older 
 
 	set -l TEMP_FILE (mktemp)
     pkill -9 ncat
-    ncat -lp 8888 --keep-open --output $TEMP_FILE -e "/home/devansh/Scripts/ungoogled-chromium-yay-handler.sh $TEMP_FILE" &
+    ncat -lp 8888 --keep-open --output $TEMP_FILE -e "/home/devansh/Scripts/ungoogled-chromium-yay-handler $TEMP_FILE" &
 
     set -l ORIG_ARGS $argv
 
