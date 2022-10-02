@@ -9,8 +9,9 @@ if status is-interactive
     set -gx NNN_FIFO '/tmp/nnn.fifo'
     set -gx NNN_PLUG 'x:-!./$nnn&*;u:!unp -U "$nnn";m:-!xargs -0 xdg-open < '
     set -gx NNN_SEL '/tmp/.sel'
-    set -x PATH $PATH '/home/devansh/Android/cmdlin-tools/latest/bin' '/home/devansh/Android/emulator' '/home/devansh/Android/platform-tools' '/home/devansh/.yarn/bin' '/home/devansh/Scripts'
+    set -x PATH $PATH '/home/devansh/Android/cmdline-tools/latest/bin' '/home/devansh/Android/emulator' '/home/devansh/Android/platform-tools' '/home/devansh/.yarn/bin' '/home/devansh/Scripts' '/home/devansh/.pulumi/bin'
     set -gx LIBVA_DRIVER_NAME 'i965'
+    set -gx QT_QPA_PLATFORMTHEME 'qt5ct'
 
     fzf_configure_bindings --directory=\cf --git_log=\cl --git_status=\cs --history=\cr --variables=\cx --processes=\cp
     z --clean > /dev/null 2>&1
