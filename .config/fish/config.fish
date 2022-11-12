@@ -1,4 +1,5 @@
 if status is-interactive
+    set fish_greeting
     set -gx EXA_COLORS 'di=1;38;5;4:ex=1;38;5;40:fi=38;5;255:pi=38;5;6:so=38;5;184:bd=38;5;184:cd=38;5;184:ln=1;38;5;6:or=38;5;9:ur=38;5;39:uw=38;5;39:ux=38;5;39:ue=38;5;39:gr=38;5;34:gw=38;5;34:gx=38;5;34:tr=38;5;172:tw=38;5;172:tx=38;5;172:uu=38;5;117:un=38;5;28:da=38;5;185'
     set -gx HOME '/home/devansh'
     set -gx LSCOLORS 'Gxfxcxdxbxegedabagacad'
@@ -9,7 +10,8 @@ if status is-interactive
     set -gx NNN_FIFO '/tmp/nnn.fifo'
     set -gx NNN_PLUG 'x:-!./$nnn&*;u:!unp -U "$nnn";m:-!xargs -0 xdg-open < '
     set -gx NNN_SEL '/tmp/.sel'
-    set -x PATH $PATH '/home/devansh/Android/cmdline-tools/latest/bin' '/home/devansh/Android/emulator' '/home/devansh/Android/platform-tools' '/home/devansh/.yarn/bin' '/home/devansh/Scripts' '/home/devansh/.pulumi/bin'
+    set -x PATH $PATH '/home/devansh/Android/cmdline-tools/latest/bin' '/home/devansh/Android/emulator' '/home/devansh/Android/platform-tools' '/home/devansh/.yarn/bin' '/home/devansh/Scripts' '/home/devansh/.pulumi/bin' '/home/devansh/.local/bin'
+    set -gx EDITOR 'vim'
     set -gx LIBVA_DRIVER_NAME 'i965'
     set -gx QT_QPA_PLATFORMTHEME 'qt5ct'
 
