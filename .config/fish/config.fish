@@ -8,7 +8,7 @@ if status is-interactive
     set -gx NNN_BMS 'h:/home/devansh;m:/run/media/devansh/;d:/home/devansh/Downloads/;w:/home/devansh/Win/Users/Devansh/'
     set -gx NNN_FCOLORS 'B8B80428000606000906B806'
     set -gx NNN_FIFO '/tmp/nnn.fifo'
-    set -gx NNN_PLUG 'x:-!./$nnn&*;u:!unp -U "$nnn";m:-!xargs -0 xdg-open < '
+    set -gx NNN_PLUG 'x:-!exec "./$nnn";u:!unp -U "$nnn";m:-!xargs -0 xdg-open < $nnn'
     set -gx NNN_SEL '/tmp/.sel'
     set -x PATH $PATH '/home/devansh/Android/cmdline-tools/latest/bin' '/home/devansh/Android/emulator' '/home/devansh/Android/platform-tools' '/home/devansh/.yarn/bin' '/home/devansh/Scripts' '/home/devansh/.pulumi/bin' '/home/devansh/.local/bin'
     set -gx EDITOR 'vim'
