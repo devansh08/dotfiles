@@ -5,7 +5,6 @@ set nu
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set nowrap
 set sidescroll=1
 set relativenumber
 set whichwrap+=<,>,h,l,[,]
