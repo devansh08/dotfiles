@@ -2,7 +2,7 @@
 AntiAliasFonts=true
 BoldIntense=true
 ColorScheme=ArcDark
-Font=JetBrainsMono Nerd Font Mono,10.5,-1,5,50,0,0,0,0,0
+Font=JetBrains Mono Nerd Font,11,-1,5,50,0,0,0,0,0
 LineSpacing=0
 TabColor=64,69,82,0
 UseFontLineChararacters=false
@@ -25,7 +25,7 @@ TerminalMargin=5
 AutoCopySelectedText=true
 CopyTextAsHTML=false
 MiddleClickPasteMode=1
-OpenLinksByDirectClickEnabled=false
+OpenLinksByDirectClickEnabled=true
 TextEditorCmd=6
 TrimLeadingSpacesInSelectedText=true
 TrimTrailingSpacesInSelectedText=true
