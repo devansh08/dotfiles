@@ -10,6 +10,7 @@ if status is-interactive
     set -gx NNN_FIFO '/tmp/nnn.fifo'
     set -gx NNN_PLUG 'x:-!exec "./$nnn";u:!unp -U "$nnn";m:-!xargs -0 xdg-open < $nnn'
     set -gx NNN_SEL '/tmp/.sel'
+    set -gx GOPATH '/home/devansh/Temp/go'
     set -x PATH $PATH '/home/devansh/Android/cmdline-tools/latest/bin' '/home/devansh/Android/emulator' '/home/devansh/Android/platform-tools' '/home/devansh/.yarn/bin' '/home/devansh/Scripts' '/home/devansh/.pulumi/bin' '/home/devansh/.local/bin'
     set -gx EDITOR 'vim'
     set -gx LIBVA_DRIVER_NAME 'i965'
