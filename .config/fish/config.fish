@@ -18,5 +18,6 @@ if status is-interactive
 
     fzf_configure_bindings --directory=\cf --git_log=\cl --git_status=\cs --history=\cr --variables=\cx --processes=\cp
     z --clean > /dev/null 2>&1
+    nvm use latest > /dev/null 2>&1
     _cd_listener
 end
