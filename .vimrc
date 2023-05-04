@@ -2,8 +2,8 @@ filetype indent on
 
 set laststatus=2
 set nu
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set sidescroll=1
 set relativenumber
