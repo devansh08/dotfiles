@@ -1,0 +1,17 @@
+[Appearance]
+HideSkinBorders=true
+Skin=one-dark
+SkinInstalledWithKns=true
+
+[Dialogs]
+FirstRun=false
+
+[KFileDialog Settings]
+Recent Files[$e]=arc-dark.tar.gz,file:///usr/share/yakuake/skins/arc-dark.tar.gz
+Recent URLs[$e]=file:///usr/share/yakuake/skins/
+detailViewIconSize=16
+
+[Window]
+DynamicTabTitles=true
+Height=70
+KeepOpen=false
