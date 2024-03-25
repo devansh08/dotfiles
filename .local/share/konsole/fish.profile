@@ -6,7 +6,7 @@ EmojiFont=Noto Color Emoji,11,-1,5,50,0,0,0,0,0
 Font=JetBrainsMonoNLNerdFontCompleteM Nerd Font,14,-1,5,50,0,0,0,0,0
 LineSpacing=2
 TabColor=64,69,82,0
-UseFontLineChararacters=true
+UseFontLineChararacters=false
 WordMode=true
 
 [Cursor Options]
@@ -24,7 +24,7 @@ Parent=FALLBACK/
 StartInCurrentSessionDir=false
 TerminalCenter=true
 TerminalColumns=120
-TerminalMargin=3
+TerminalMargin=0
 TerminalRows=32
 
 [Interaction Options]
