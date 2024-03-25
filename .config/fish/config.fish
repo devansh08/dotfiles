@@ -21,5 +21,5 @@ if status --is-interactive
 
     fzf_configure_bindings --directory=\cf --git_log=\cl --git_status=\cs --history=\cr --variables=\cx --processes=\cp
     _cd_listener
-    zoxide init --cmd 'cd' fish | source
+    zoxide init --cmd cdz fish | source
 end
