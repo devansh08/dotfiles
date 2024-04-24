@@ -9,3 +9,5 @@
 	excludesFile = ~/.config/git/.gitignore
 [push]
 	autoSetupRemote = true
+[rerere]
+	enabled = true
