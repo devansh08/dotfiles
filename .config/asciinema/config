@@ -1,0 +1,5 @@
+[record]
+
+; Define hotkey for pausing recording (suspending capture of output),
+; default: C-\ (control + backslash)
+pause_key = C-A-\
