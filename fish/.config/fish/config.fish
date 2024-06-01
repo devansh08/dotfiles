@@ -17,7 +17,7 @@ if status --is-interactive
     set -gx BROWSER firefox
     set -gx LIBVA_DRIVER_NAME i965
     set -gx QT_QPA_PLATFORMTHEME qt5ct
-    set -Ux nvm_default_version "v20.9.0"
+    set -Ux nvm_default_version lts
 
     fzf_configure_bindings --directory=\cf --git_log=\cl --git_status=\cs --history=\cr --variables=\cx --processes=\cp
     _cd_listener
