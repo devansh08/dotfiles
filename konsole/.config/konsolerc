@@ -8,9 +8,6 @@ DefaultProfile=fish.profile
 [General]
 ConfigVersion=1
 
-[KFileDialog Settings]
-detailViewIconSize=16
-
 [KonsoleWindow]
 AllowMenuAccelerators=true
 

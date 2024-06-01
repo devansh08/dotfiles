@@ -1,0 +1,43 @@
+#!/bin/bash
+
+DEBUG=1
+
+debug() {
+  if [[ $DEBUG -eq 1 ]]; then
+    echo -e "DEBUG: $1"
+  fi
+}
+
+RESURRECT_DIR=~/.local/share/tmux/resurrect
+LAST_FILE=$RESURRECT_DIR/last
+
+last_size=$(du -L $LAST_FILE | awk '{ print $1 }')
+debug "last_size=$last_size"
+if [[ $last_size -eq 0 ]]; then
+  debug "Deleting $LAST_FILE"
+  rm -f $LAST_FILE
+
+  VALID_RESURRECT_FILE=$(ls -t1 $RESURRECT_DIR/tmux_resurrect_* | head -n 2 | tail -n 1)
+  debug "Valid resurrect file found: $VALID_RESURRECT_FILE"
+  debug "Linking $LAST_FILE to $VALID_RESURRECT_FILE"
+  ln -s $VALID_RESURRECT_FILE $LAST_FILE
+
+  debug "Found empty files:\n$(find $RESURRECT_DIR -type f -name 'tmux_resurrect*' -empty)"
+  find $RESURRECT_DIR -type f -name 'tmux_resurrect*' -empty -delete $argv
+
+  debug "Killing tmux server"
+  tmux kill-server
+fi
+
+debug "Starting new tmux server"
+tmux start-server
+
+debug "Found open sessions:\n$(tmux list-sessions)"
+tmux list-sessions | cut -d ':' -f 1 | grep "default"
+if [[ ! $? -eq 0 ]]; then
+  debug "default session not found"
+  tmux new-session "default"
+  debug "default session created"
+fi
+
+konsole --fullscreen -e "fish -c 'tmux attach-session -t default'"
