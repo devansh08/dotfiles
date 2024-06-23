@@ -33,10 +33,10 @@ debug "Starting new tmux server"
 tmux &
 
 debug "Found open sessions:\n$(tmux list-sessions)"
-tmux has-session "default"
+tmux has-session -t "default"
 if [[ ! $? -eq 0 ]]; then
   debug "default session not found"
-  tmux new-session "default"
+  tmux new-session -s "default"
   debug "default session created"
 fi
 
