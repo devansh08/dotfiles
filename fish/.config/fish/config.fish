@@ -20,7 +20,7 @@ if status --is-interactive
     set -gx QT_QPA_PLATFORMTHEME qt5ct
     set -gx nvm_default_version lts
     set -gx XCURSOR_THEME Bibata-Modern-Classic
-    set -gx WAYLAND_DISPLAY wayland-0
+    set -gx WAYLAND_DISPLAY (basename (find /run/user/(id -u) -type s -name 'wayland-*' 2> /dev/null))
 
     fzf_configure_bindings --directory=\cf --git_log=\cl --git_status=\cs --history=\cr --variables=\cx --processes=\cp
     _cd_listener
