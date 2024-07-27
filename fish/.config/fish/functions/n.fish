@@ -1,3 +1,3 @@
-function n --wraps='nnn -oRSQrA -T e' --description 'alias n=nnn -oRSQrA -T e'
-    nnn -oRSQrA -T e $argv
+function n --wraps='nnn -oRSQrA -Pp -T e' --description 'alias n=nnn -oRSQrA -Pp -T e'
+    nnn -oRSQrA -Pp -T e $argv
 end
