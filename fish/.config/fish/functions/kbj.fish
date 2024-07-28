@@ -1,3 +1,3 @@
-function kbj --wraps='kill -9 (jobs -p | tail -n +1)' --description 'alias kbj kill -9 (jobs -p | tail -n +1)'
-    kill -9 (jobs -p | tail -n +1) $argv
+function kbj --wraps='jobs -p | tail -n +1 | xargs -I % kill -9 %' --description 'alias kbj jobs -p | tail -n +1 | xargs -I % kill -9 %'
+    jobs -p | tail -n +1 | xargs -I % kill -9 % $argv
 end
