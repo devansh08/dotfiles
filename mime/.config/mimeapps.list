@@ -1,0 +1,37 @@
+[Added Associations]
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;
+application/x-desktop=sublime_text.desktop;vim.desktop;okularApplication_txt.desktop;
+application/x-extension-htm=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+application/x-extension-shtml=firefox.desktop;
+application/x-extension-xht=firefox.desktop;
+application/x-extension-xhtml=firefox.desktop;
+application/xhtml+xml=firefox.desktop;
+audio/AMR=vlc.desktop;
+text/html=firefox.desktop;
+text/plain=sublime_text.desktop;okularApplication_txt.desktop;nvim.desktop;GitKraken.desktop;vim.desktop;code.desktop;
+x-scheme-handler/chrome=firefox.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/pie=httpie.desktop;
+
+[Default Applications]
+application/pdf=okularApplication_pdf.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;
+application/x-desktop=sublime_text.desktop;
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+image/png=swayimg.desktop
+audio/AMR=vlc.desktop;
+text/html=firefox.desktop
+text/plain=sublime_text.desktop;
+x-scheme-handler/chrome=firefox.desktop
+x-scheme-handler/gitkraken=GitKraken.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/logseq=logseq-desktop.desktop
+x-scheme-handler/pie=httpie.desktop
