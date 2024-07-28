@@ -14,7 +14,7 @@ config.term = "xterm-256color"
 
 config.daemon_options = nil
 
-config.font = wezterm.font({ family = "JetBrainsMonoNL Nerd Font Mono", weight = "Regular", scale = 1.0 })
+config.font = wezterm.font({ family = "JetBrainsMonoNL Nerd Font Mono", weight = "Light", scale = 1.0 })
 -- config.font = wezterm.font({ family = "ComicShannsMono Nerd Font Mono", scale = 1.0 })
 config.font_size = 14
 config.bold_brightens_ansi_colors = "BrightAndBold"
@@ -22,6 +22,7 @@ config.color_scheme = "Catppuccin Mocha"
 config.custom_block_glyphs = true
 config.line_height = 1.0
 config.unicode_version = 14
+config.warn_about_missing_glyphs = false
 
 config.enable_csi_u_key_encoding = true
 
@@ -42,10 +43,10 @@ config.enable_scroll_bar = false
 config.prefer_to_spawn_tabs = false
 config.quit_when_all_windows_are_closed = true
 config.window_close_confirmation = "NeverPrompt"
-config.window_decorations = "NONE"
+config.window_decorations = "TITLE | RESIZE"
 config.window_padding = {
-	left = 1,
-	right = 1,
+	left = 0,
+	right = 0,
 	top = 0,
 	bottom = 0,
 }
