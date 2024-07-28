@@ -1,0 +1,13 @@
+#!/bin/bash
+
+LIST=$(swaymsg -t get_tree | jq -r 'recurse(.nodes[]) | first(select(.name=="__i3_scratch")) | .floating_nodes[] | "\(.pid):::\(.name)"')
+
+SELECTION=$(echo -e "${LIST[@]}" | rofi -dmenu -p "Open" -i -display-columns 2-9 -display-column-separator ":::")
+
+if [[ ! -z "$SELECTION" ]]; then
+  PID=$(echo $SELECTION | awk -F ':::' '{ print $1 }')
+  # Hopefully avoid random characters that can break the regex or whatever logic swaymsg uses
+  TITLE=$(echo $SELECTION | awk -F ':::' '{ print $2 }' | head -c 10)
+
+  swaymsg "[pid=$PID title=\"$TITLE\"] scratchpad show; floating toggle; floating toggle"
+fi

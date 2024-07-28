@@ -1,0 +1,79 @@
+@import "mocha.css";
+
+* {
+  font-family: "JetBrainsMonoNL Nerd Font Mono";
+  font-size: 18px;
+}
+
+window#waybar {
+  background-color: @mantle;
+  color: @text;
+}
+
+tooltip {
+  background-color: @mantle;
+  color: @text;
+}
+
+.module {
+  margin: -1px 6px;
+  padding: 0px 6px;
+  box-shadow: inset 0 -3px @blue;
+  transition: box-shadow 0.1s ease;
+}
+
+.module:hover {
+  box-shadow: inset 0 -4px @blue;
+}
+
+#battery.warning {
+  background-color: @peach;
+  color: @crust;
+}
+
+#battery.critical {
+  background-color: @red;
+  color: @crust;
+}
+
+#battery.charging {
+  background-color: @mantle;
+  color: @blue;
+}
+
+.clock-child,
+.hardware-child {
+  background-color: @blue;
+  color: @crust;
+}
+
+#workspaces {
+  box-shadow: none;
+}
+
+#workspaces button {
+  border-radius: 0px;
+}
+
+#workspaces button:hover {
+  border: 1px solid transparent;
+  transition: none;
+}
+
+#workspaces button:active,
+#workspaces button:focus {
+  background-color: @surface0;
+}
+
+#workspaces button.focused {
+  box-shadow: inset 0 -2px @blue;
+}
+
+#workspaces button.urgent {
+  background-color: @peach;
+  color: @crust;
+}
+
+#clock {
+  margin-right: 6px;
+}

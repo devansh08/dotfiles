@@ -1,0 +1,168 @@
+xwayland disable
+
+include catppuccin-mocha
+
+set $mod Mod4
+
+set $left Left
+set $down Down
+set $up Up
+set $right Right
+
+font pango:JetBrainsMonoNL Nerd Font Mono 16px
+
+output * bg /home/devansh/.local/share/wallpapers/catppuccin-wallpapers/tropic_island_night.jpg fill
+
+exec swayidle -w \
+    timeout 450 'swaylock -f' \
+    timeout 600 'systemctl suspend'
+
+input "type:touchpad" {
+  tap enabled
+  dwt enabled
+  natural_scroll disabled
+  middle_emulation enabled
+}
+
+input "type:keyboard" {
+  xkb_numlock enabled
+}
+
+bindsym $mod+Return exec wezterm
+bindsym $mod+Shift+Return exec wezterm start -- fish
+bindsym $mod+Ctrl+Return exec wezterm start --class="wezterm_float" -- fish
+
+bindsym $mod+q kill
+
+bindsym $mod+space exec rofi -show drun 
+bindsym $mod+r exec rofi -no-show-icons -show run 
+bindsym $mod+p exec rofi -no-show-icons -show powermenu -modi "powermenu:rofi-power-menu --choices=logout/suspend/shutdown/reboot"
+bindsym $mod+c exec rofi -no-show-icons -show calc -modi "calc:rofi-calculator"
+bindsym $mod+Print exec rofi -no-show-icons -show screenshot -modi "screenshot:rofi-screenshot"
+bindsym $mod+Shift+s exec rofi-scratchpad
+bindsym $mod+Shift+v exec rofi -show Clipboard -modi "Clipboard:rofi-cliphist"
+
+floating_modifier $mod normal
+
+bindsym $mod+Shift+c reload
+
+bindsym $mod+l exec swaylock
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+
+bindsym $mod+Ctrl+Shift+$left move container to workspace prev
+bindsym $mod+Ctrl+Shift+$right move container to workspace next
+
+bindsym $mod+j workspace prev
+bindsym $mod+k workspace next
+bindsym $mod+Ctrl+$left workspace prev
+bindsym $mod+Ctrl+$right workspace next
+
+bindsym $mod+Tab workspace back_and_forth
+
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+F floating toggle
+
+bindsym $mod+equal focus mode_toggle
+
+bindsym $mod+Shift+Backspace move scratchpad
+bindsym $mod+Backspace scratchpad show
+
+bindsym $mod+Shift+equal exec sway-float-window
+
+bindsym XF86MonBrightnessUp exec bri-control inc
+bindsym XF86MonBrightnessDown exec bri-control dec
+
+bindsym XF86AudioRaiseVolume exec vol-control inc
+bindsym XF86AudioLowerVolume exec vol-control dec
+bindsym XF86AudioMute exec vol-control mute
+
+bindsym XF86AudioPlay exec playerctl -p spotify play-pause
+bindsym XF86AudioPrev exec playerctl -p spotify previous
+bindsym XF86AudioNext exec playerctl -p spotify next
+
+bindsym Print exec grimshot --notify savecopy output /home/devansh/Pictures/Screenshots/Screenshot_$(date '+%Y%m%d_%H%M%S').png
+
+mode "resize" {
+    bindsym $left resize shrink width 10px
+    bindsym $down resize shrink height 10px
+    bindsym $up resize grow height 10px
+    bindsym $right resize grow width 10px
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+r mode "resize"
+
+default_border normal 4
+titlebar_border_thickness 4
+
+gaps inner 10px
+gaps outer 2px
+
+bar swaybar_command waybar
+
+# target                 border    bg    text   indicator child_border
+client.focused           $blue     $blue $crust $blue     $sapphire
+client.unfocused         $surface1 $base $text  $surface1 $surface1 
+client.urgent            $peach    $base $peach $peach    $peach
+client.placeholder       $overlay0 $base $text  $overlay0 $overlay0
+
+for_window [app_id="wezterm_float"] floating enable
+for_window [app_id="wezterm_scratch"] floating enable, move scratchpad
+
+exec swaymsg 'workspace 1; exec wezterm;'
+exec swaymsg 'workspace 2; exec firefox; layout tabbed;'
+exec swaymsg 'exec wezterm start --class="wezterm_scratch" -- fish -C n;'
+
+exec batt-watch
+
+exec dunst
+exec kdeconnectd
+exec wl-paste --watch cliphist store
+
+exec --no-startup-id /usr/lib/pam_kwallet_init
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# https://wiki.archlinux.org/title/Sway#Change_cursor_theme_and_size
+seat seat0 xcursor_theme Bibata-Modern-Classic 20
+
+include /etc/sway/config.d/*

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+BATT=/sys/class/power_supply/BAT0
+
+while true; do
+  status=$(cat $BATT/status)
+  capacity=$(cat $BATT/capacity)
+
+  if [[ "$status" == "Full" ]]; then
+    dunstify -i "/usr/share/icons/Papirus/32x32/panel/battery-100-charged.svg" "Battery fully charged!"
+  elif [[ "$status" != "Charging" ]]; then
+    if [[ $capacity -le 10 ]]; then
+      dunstify -u 'critical' -t 30000 -i "/usr/share/icons/Papirus/32x32/panel/battery-caution.svg" "Low Battery! System is going to suspend in 30s..."
+      sleep 30
+
+      if [[ "$status" != "Charging" ]]; then
+        systemctl suspend
+      fi
+    fi
+  fi
+
+  sleep 60
+done

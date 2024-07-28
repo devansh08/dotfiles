@@ -1,0 +1,19 @@
+configuration {
+	font: "JetBrainsMonoNL Nerd Font Mono 14";
+	fixed-num-lines: true;
+	show-icons: true;
+  icon-theme: "Papirus-Dark";
+	drun-show-actions: false;
+	drun-display-format: " {name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+	disable-history: false;
+  drun-use-desktop-cache: true;
+	sort: false;
+	case-sensitive: false;
+	cycle: true;
+	eh: 1;
+	click-to-exit: true;
+	steal-focus: false;
+  display-drun: "Run";
+}
+
+@theme "catppuccin-mocha"

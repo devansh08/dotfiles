@@ -1,0 +1,12 @@
+#!/bin/sh
+
+PID_FILE=/tmp/sway-float-pid
+if [[ -a $PID_FILE ]]; then
+  PID=$(cat $PID_FILE)
+  swaymsg "[pid=$PID] scratchpad show, floating toggle, floating toggle"
+  rm $PID_FILE
+else
+  PID=$(swaymsg -t get_tree | jq 'recurse(.nodes[]) | select(.floating_nodes[].focused == true) | .floating_nodes[] | select(.focused == true) | .pid')
+  swaymsg "[pid=$PID] move container to scratchpad"
+  echo -n $PID >$PID_FILE
+fi

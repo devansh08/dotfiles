@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Some permission issue with running this script directly from greetd
+# Tracking as script just to save the config on git
+tuigreet --cmd 'sway' --greeting 'Welcome!' --time --time-format '%a %d, %b - %H:%M' --remember --remember-session --user-menu --asterisks --width 40 --prompt-padding 1 --window-padding 1 --theme 'border=text=blue;time=blue;border=cyan;title=red;greet=red;prompt=blue;input=green;action=yellow;button=yellow;'

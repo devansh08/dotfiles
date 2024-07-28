@@ -1,0 +1,9 @@
+#!/bin/sh
+
+case $1 in
+inc) xbacklight -inc 1 ;;
+dec) xbacklight -dec 1 ;;
+esac
+
+val=$(xbacklight -get)
+dunstify -t 3000 -h "int:value:$val" -h "string:x-dunst-stack-tag:bri-control" -i "/usr/share/icons/Papirus/16x16/panel/brightness-symbolic.svg" "Brightness: $val"

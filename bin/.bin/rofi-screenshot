@@ -1,0 +1,33 @@
+#!/bin/bash
+
+function file_name() {
+  echo "/home/devansh/Pictures/Screenshots/Screenshot_$(date '+%Y%m%d_%H%M%S')${1:+_$1}.png"
+}
+
+# Need a 1 second wait so that rofi menu can close before taking the screenshot
+GRIMSHOT_DEF_OPTS="--notify --wait 1 savecopy"
+
+OPT_OUTPUT="Capture Entire Screen"
+OPT_ACTIVE="Capture Current Window"
+OPT_AREA="Capture Selected Area"
+
+if [[ -z "$@" ]]; then
+  echo -e "\0prompt\x1fScreenshot"
+
+  echo $OPT_OUTPUT
+  echo $OPT_ACTIVE
+  echo $OPT_AREA
+else
+  FILE_NAME=$(file_name)
+  case "$@" in
+  "$OPT_OUTPUT")
+    grimshot $GRIMSHOT_DEF_OPTS output $FILE_NAME >/dev/null 2>&1 &
+    ;;
+  "$OPT_ACTIVE")
+    grimshot $GRIMSHOT_DEF_OPTS active $FILE_NAME >/dev/null 2>&1 &
+    ;;
+  "$OPT_AREA")
+    grimshot $GRIMSHOT_DEF_OPTS area $FILE_NAME >/dev/null 2>&1 &
+    ;;
+  esac
+fi

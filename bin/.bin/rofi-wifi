@@ -1,0 +1,177 @@
+#!/bin/bash
+
+_awk() {
+  /usr/bin/awk "$@"
+}
+
+_grep() {
+  /usr/bin/grep "$@"
+}
+
+_nmcli() {
+  /usr/bin/nmcli "$@"
+}
+
+_rofi() {
+  /usr/bin/rofi "$@"
+}
+
+awk() {
+  _awk -F "${2:-:}" "{ print \$${1} }"
+}
+
+wifi_awk() {
+  echo $(echo $WIFI_OUTPUT | awk $1)
+}
+
+nmcli() {
+  _nmcli -t -c no "$@"
+}
+
+rofi() {
+  echo -e "$1" | _rofi -i -dmenu -p "${2:-WiFi}"
+
+  if [[ ! $? -eq 0 ]]; then
+    kill $$
+  fi
+}
+
+get_wifi_interface() {
+  echo $(wifi_awk 1)
+}
+
+get_wifi_status() {
+  echo $(wifi_awk 3)
+}
+
+get_radio_status() {
+  echo $(nmcli radio wifi)
+}
+
+get_connected_ssid() {
+  echo $(wifi_awk 4)
+}
+
+get_ssid_list() {
+  output=$(nmcli -f "SSID,SSID,BARS,SECURITY" device wifi list | _awk -F ':' '{ str = ""; if (length($1) > 12) { str = gensub(/^(.{12}).*/, "\\1...", "g", $1) } else { for (i = length($1); i < 15; i++) { $1 = $1 " "; } str = $1; } str = str "        :" $2 ":" $3 ":" $4; print str; }')
+  echo -e "${output[*]}"
+}
+
+get_saved_ssids() {
+  output=$(nmcli connection show | awk 1)
+  echo -e "${output[*]}"
+}
+
+status_string() {
+  case $(get_wifi_status) in
+  connected)
+    echo "Connected ($(get_connected_ssid))"
+    ;;
+  *)
+    echo "Disconnected"
+    ;;
+  esac
+}
+
+radio_string() {
+  case $(get_radio_status) in
+  enabled)
+    echo "Enabled"
+    ;;
+  *)
+    echo "Disabled"
+    ;;
+  esac
+}
+
+do_wifi_disconnect() {
+  _nmcli device disconnect $(get_wifi_interface)
+}
+
+do_wifi_rescan() {
+  _nmcli device wifi rescan ifname $(get_wifi_interface)
+}
+
+OPT_DISCON="Disconnect"
+OPT_RESCAN="Rescan"
+
+OPT_ENBL="Enable"
+OPT_DSBL="Disable"
+
+OPT_BACK="Back"
+OPT_EXIT="Exit"
+
+OPT_SSID="SSID_"
+OPT_ASK="ASK_PASS"
+
+OPT_SEP="----------------------------------------"
+
+SELECTION=""
+
+while true; do
+  WIFI_OUTPUT=$(nmcli device status | grep -i "wifi")
+
+  OPT_WIFI="Status\t:\t$(status_string)"
+  OPT_RADI="Radio\t:\t$(radio_string)"
+
+  SSID_NAME="${SSID_NAME:-}"
+
+  case "$SELECTION" in
+  "" | "$OPT_BACK")
+    SELECTION=$(rofi "$OPT_WIFI\n$OPT_RADI\n$OPT_EXIT")
+    ;;
+  "Status"*"Connected"*)
+    SELECTION=$(rofi "$OPT_DISCON\n$OPT_BACK" $(get_connected_ssid))
+    ;;
+  "Status"*"Disconnected")
+    SELECTION=$(echo -e "$OPT_RESCAN\n$OPT_BACK\n$OPT_SEP\n$(get_ssid_list)" | _rofi -i -dmenu -p "Connect to" -display-columns 1,3,4 -display-column-separator ':')
+    if [[ "$SELECTION" != "$OPT_RESCAN" && "$SELECTION" != "$OPT_BACK" && "$SELECTION" != "$OPT_SEP" ]]; then
+      SELECTION="$OPT_SSID$(echo "$SELECTION" | awk 2)"
+    fi
+    ;;
+  "Radio"*"Enabled")
+    SELECTION=$(rofi "$OPT_DSBL\n$OPT_BACK" "Radio")
+    ;;
+  "Radio"*"Disabled")
+    SELECTION=$(rofi "$OPT_ENBL\n$OPT_BACK" "Radio")
+    ;;
+  "$OPT_ENBL")
+    nmcli radio wifi on
+    SELECTION=""
+    ;;
+  "$OPT_DSBL")
+    nmcli radio wifi off
+    SELECTION=""
+    ;;
+  "$OPT_DISCON")
+    do_wifi_disconnect
+    SELECTION=""
+    ;;
+  "$OPT_RESCAN")
+    do_wifi_rescan
+    SELECTION="Status Disconnected"
+    ;;
+  "$OPT_SSID"*)
+    SELECTION="${SELECTION#$OPT_SSID}"
+    echo "$(get_saved_ssids)" | grep -E "^$SELECTION$" 2>&1 >/dev/null
+    if [[ $? -eq 0 ]]; then
+      _nmcli connection up "$SELECTION" 2>&1 >/dev/null
+      SELECTION=""
+    else
+      SSID_NAME="$SELECTION"
+      SELECTION=$OPT_ASK
+    fi
+    ;;
+  "$OPT_ASK")
+    PASSWORD=$(_rofi -dmenu -p "Passphrase" -password)
+    _nmcli device wifi connect "$SSID_NAME" password "$PASSWORD"
+    SELECTION=""
+    ;;
+  "$OPT_SEP")
+    SELECTION="Status Disconnected"
+    ;;
+  "$OPT_EXIT")
+    break
+    ;;
+  esac
+done
