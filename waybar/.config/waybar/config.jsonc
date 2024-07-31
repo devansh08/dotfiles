@@ -160,8 +160,8 @@
   "mpris": {
     "interval": 1,
     "player": "spotify",
-    "format": " {dynamic}",
-    "format-paused": " {dynamic}",
+    "format": " {dynamic}",
+    "format-paused": " {dynamic}",
     "max-length": 40,
     "dynamic-order": [
       "title",
