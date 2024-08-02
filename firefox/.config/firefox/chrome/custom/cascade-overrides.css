@@ -1,0 +1,29 @@
+:root {
+  --uc-urlbar-min-width: 40vw;
+  --uc-urlbar-max-width: 40vw;
+}
+
+#star-button-box {
+  display: none !important;
+}
+
+#urlbar[breakout] {
+  top: unset !important;
+}
+
+#urlbar[breakout][breakout-extend] {
+  top: 3px !important;
+}
+
+.tabbrowser-tab[selected] {
+  border: 1px solid var(--uc-identity-colour-blue) !important;
+}
+
+#home-button {
+  display: none !important;
+}
+
+#urlbar-input {
+  font-family: "JetBrainsMonoNL Nerd Font Mono" !important;
+  font-size: 15px !important;
+}
