@@ -1,3 +1,3 @@
-function grep --wraps=rg --wraps='rg -i' --description 'alias grep rg -i'
-  rg -i $argv
+function grep --wraps=rg --wraps='rg -i --hidden' --description 'alias grep rg -i --hidden'
+  rg -i --hidden $argv
 end
