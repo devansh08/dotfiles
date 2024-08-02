@@ -1,11 +1,16 @@
 # dotfiles
 
-## bin
+## Setup
+- Clone into `~/.dotfiles`
+- Run `stow <module>` to create symlink(s) inside `~/`
+
+## Module specific points
+### bin
 - Add `~/.bin` to `PATH`
 - Set `command` in `/etc/greetd/config.toml` to command in `bin/.bin/tuigreet-custom`
 
-## firefox
+### firefox
 - Symlink `.mozilla/firefox/<profile-id>.default-release/chrome` to `~/.config/firefox/chrome`
 
-## mime
+### mime
 - Run `update-mime-database ~/.config/mimeapps.list` to update mimelist database
