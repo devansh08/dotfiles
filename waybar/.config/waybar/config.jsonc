@@ -64,6 +64,7 @@
   "clock": {
     "interval": 1,
     "format": "󰅐 {:%H:%M:%S}",
+    "tooltip": false,
   },
   "clock#day": {
     "interval": 60,
