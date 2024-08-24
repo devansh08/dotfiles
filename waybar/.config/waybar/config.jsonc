@@ -41,7 +41,7 @@
   "bluetooth": {
     "format-on": "󰂯",
     "format-off": "󰂲",
-    "format-connected": "󰂱",
+    "format-connected": "󰂱 {device_alias}",
     "format-disabled": "DSBL",
     "max-length": 10,
     "on-click": "rofi-bluetooth",
