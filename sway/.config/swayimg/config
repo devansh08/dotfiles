@@ -9,8 +9,6 @@ mode = viewer
 position = parent
 # Window size (fullscreen/parent/image, or absolute size, e.g. 800,600)
 size = parent
-# Window background mode/color (none/RGB, e.g. #112233)
-window = #1e1e2e00
 
 # Action performed by SIGUSR1 signal (same format as for key bindings)
 sigusr1 = reload
