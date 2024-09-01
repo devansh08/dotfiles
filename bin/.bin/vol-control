@@ -1,37 +1,47 @@
 #!/bin/sh
 
 _dunstify() {
-  dunstify -t 3000 -h "int:value:$1" -h "string:x-dunst-stack-tag:vol-control" -i "$2" "$3"
+  if [[ "$1" == "" ]]; then
+    dunstify -t 3000 -h "string:x-dunst-stack-tag:vol-control" -i "$2" "$3"
+  else
+    dunstify -t 3000 -h "int:value:$1" -h "string:x-dunst-stack-tag:vol-control" -i "$2" "$3"
+  fi
 }
 
 PULSE_SINK=$(pactl list sinks short | grep -i running | awk '{ print $2 }')
 
-case $1 in
-inc)
-  pactl set-sink-volume $PULSE_SINK "+1%"
-  pactl set-sink-mute $PULSE_SINK 0
+if [[ "$PULSE_SINK" == "" ]]; then
+  _dunstify "" "/usr/share/icons/Papirus/16x16/panel/audio-volume-medium.svg" "No audio playing currently"
+else
+  case $1 in
+  inc)
+    pactl set-sink-volume $PULSE_SINK "+1%"
+    pactl set-sink-mute $PULSE_SINK 0
 
-  val=$(pactl get-sink-volume $PULSE_SINK | head -n 1 | awk '{ print $5 }')
-  _dunstify "$val" "/usr/share/icons/Papirus/16x16/panel/audio-volume-medium.svg" "Volume: $val"
-  ;;
-dec)
-  pactl set-sink-volume $PULSE_SINK "-1%"
-  pactl set-sink-mute $PULSE_SINK 0
+    val=$(pactl get-sink-volume $PULSE_SINK | head -n 1 | awk '{ print $5 }')
+    _dunstify "$val" "/usr/share/icons/Papirus/16x16/panel/audio-volume-medium.svg" "Volume: $val"
+    ;;
+  dec)
+    pactl set-sink-volume $PULSE_SINK "-1%"
+    pactl set-sink-mute $PULSE_SINK 0
 
-  val=$(pactl get-sink-volume $PULSE_SINK | head -n 1 | awk '{ print $5 }')
-  _dunstify "$val" "/usr/share/icons/Papirus/16x16/panel/audio-volume-medium.svg" "Volume: $val"
-  ;;
-mute)
-  pactl set-sink-mute $PULSE_SINK "toggle"
-  val=$(pactl get-sink-mute $PULSE_SINK | awk '{ print $2 }')
+    val=$(pactl get-sink-volume $PULSE_SINK | head -n 1 | awk '{ print $5 }')
+    _dunstify "$val" "/usr/share/icons/Papirus/16x16/panel/audio-volume-medium.svg" "Volume: $val"
+    ;;
+  mute)
+    pactl set-sink-mute $PULSE_SINK "toggle"
+    val=$(pactl get-sink-mute $PULSE_SINK | awk '{ print $2 }')
 
-  if [[ "$val" == "no" ]]; then
-    text="Speaker Unmuted"
-    icon="/usr/share/icons/Papirus/16x16/panel/audio-volume-medium.svg"
-  else
-    text="Speaker Muted"
-    icon="/usr/share/icons/Papirus/16x16/panel/audio-volume-muted.svg"
-  fi
-  _dunstify "$val" "$icon" "$text"
-  ;;
-esac
+    if [[ "$val" == "no" ]]; then
+      text="Speaker Unmuted"
+      icon="/usr/share/icons/Papirus/16x16/panel/audio-volume-medium.svg"
+
+      vol=$(pactl get-sink-volume $PULSE_SINK | head -n 1 | awk '{ print $5 }')
+    else
+      text="Speaker Muted"
+      icon="/usr/share/icons/Papirus/16x16/panel/audio-volume-muted.svg"
+    fi
+    _dunstify "$vol" "$icon" "$text"
+    ;;
+  esac
+fi
