@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cur_ws=$(swaymsg -t get_workspaces --raw | jq -r '.[] | select(.focused == true).id')
+swaymsg "[con_mark=_prev_${cur_ws}] focus"

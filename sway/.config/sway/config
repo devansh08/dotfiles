@@ -54,10 +54,10 @@ bindsym $mod+$down focus down
 bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
-bindsym $mod+Shift+$left move left
-bindsym $mod+Shift+$down move down
-bindsym $mod+Shift+$up move up
-bindsym $mod+Shift+$right move right
+bindsym $mod+Shift+$left mark swap, focus left, swap container with mark swap, focus left, mark --toggle swap
+bindsym $mod+Shift+$down mark swap, focus down, swap container with mark swap, focus down, mark --toggle swap
+bindsym $mod+Shift+$up mark swap, focus up, swap container with mark swap, focus up, mark --toggle swap
+bindsym $mod+Shift+$right mark swap, focus right, swap container with mark swap, focus right, mark --toggle swap
 
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
@@ -90,6 +90,7 @@ bindsym $mod+Ctrl+$left workspace prev
 bindsym $mod+Ctrl+$right workspace next
 
 bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+grave exec sway-switch-focus
 
 bindsym $mod+b splith
 bindsym $mod+v splitv
@@ -102,6 +103,8 @@ bindsym $mod+f fullscreen
 bindsym $mod+Shift+F floating toggle
 
 bindsym $mod+equal focus mode_toggle
+bindsym $mod+bracketleft focus parent
+bindsym $mod+bracketright focus child
 
 bindsym $mod+Shift+Backspace move scratchpad
 bindsym $mod+Backspace scratchpad show
@@ -154,6 +157,7 @@ exec swaymsg 'workspace 2; exec firefox; layout tabbed;'
 exec swaymsg 'exec wezterm start --class="wezterm_scratch" -- fish -C n;'
 
 exec batt-watch
+exec sway-track-focus
 
 exec dunst
 exec kdeconnectd

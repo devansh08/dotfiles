@@ -1,0 +1,18 @@
+#!/bin/bash
+
+prev_focus=$(swaymsg -r -t get_seats | jq '.[0].focus')
+cur_ws=$(swaymsg -t get_workspaces --raw | jq -r '.[] | select(.focused == true).id')
+ws=$cur_ws
+
+swaymsg -m -t subscribe '["window","workspace"]' |
+  jq -r --unbuffered 'select(.change == "focus") | if .container then "window:\(.container.id)" else "workspace:\(.current.id)" end' |
+  while read val; do
+    if [[ $val == window* ]]; then
+      swaymsg "[con_id=${prev_focus}] mark --add _prev_${ws}" &>/dev/null
+
+      prev_focus=${val#"window:"}
+      ws=$cur_ws
+    else
+      cur_ws=${val#"workspace:"}
+    fi
+  done
