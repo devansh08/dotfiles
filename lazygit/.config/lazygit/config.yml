@@ -1,5 +1,6 @@
 gui:
   mainPanelSplitMode: 'horizontal'
+
   theme:
     activeBorderColor:
       - '#89b4fa'
@@ -9,8 +10,6 @@ gui:
     optionsTextColor:
       - '#89b4fa'
     selectedLineBgColor:
-      - '#313244'
-    selectedRangeBgColor:
       - '#313244'
     cherryPickedCommitBgColor:
       - '#45475a'
@@ -22,3 +21,6 @@ gui:
       - '#cdd6f4'
     searchingActiveBorderColor:
       - '#f9e2af'
+
+  authorColors:
+    '*': '#b4befe'
