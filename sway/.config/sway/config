@@ -30,110 +30,189 @@ input "type:keyboard" {
   xkb_numlock enabled
 }
 
+## Exec: Wezterm
 bindsym $mod+Return exec wezterm
+## Exec: Wezterm default
 bindsym $mod+Shift+Return exec wezterm start -- fish
+## Exec: Wezterm default in float mode
 bindsym $mod+Ctrl+Return exec wezterm start --class="wezterm_float" -- fish
 
+## Sway: Close Window
 bindsym $mod+q kill
 
+## Exec: Rofi Apps
 bindsym $mod+space exec rofi -show drun 
+## Exec: Rofi Run
 bindsym $mod+r exec rofi -no-show-icons -show run 
+## Exec: Rofi Power Menu
 bindsym $mod+p exec rofi -no-show-icons -show powermenu -modi "powermenu:rofi-power-menu --choices=logout/suspend/shutdown/reboot"
+## Exec: Rofi Calc
 bindsym $mod+c exec rofi -no-show-icons -show calc -modi "calc:rofi-calculator"
+## Exec: Rofi Screenshot
 bindsym $mod+Print exec rofi -no-show-icons -show screenshot -modi "screenshot:rofi-screenshot"
+## Exec: Rofi Scratchpads
 bindsym $mod+Shift+s exec rofi-scratchpad
+## Exec: Rofi Clipboard
 bindsym $mod+Shift+v exec rofi -show Clipboard -modi "Clipboard:rofi-cliphist"
+## Exec: Rofi Sway Binds
+bindsym $mod+b exec rofi -no-show-icons -show sway -modi "sway:rofi-sway"
 
 floating_modifier $mod normal
 
+## Sway: Reload Sway config
 bindsym $mod+Shift+c reload
 
+## Sway: Lock Screen
 bindsym $mod+l exec swaylock
+## Sway: Exit Sway
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
+## Focus Left Window
 bindsym $mod+$left focus left
+## Focus Down Window
 bindsym $mod+$down focus down
+## Focus Up Window
 bindsym $mod+$up focus up
+## Focus Right Window
 bindsym $mod+$right focus right
 
+## Window: Swap with Left Window
 bindsym $mod+Shift+$left mark swap, focus left, swap container with mark swap, focus left, mark --toggle swap
+## Window: Swap with Down Window
 bindsym $mod+Shift+$down mark swap, focus down, swap container with mark swap, focus down, mark --toggle swap
+## Window: Swap with Up Window
 bindsym $mod+Shift+$up mark swap, focus up, swap container with mark swap, focus up, mark --toggle swap
+## Window: Swap with Right Window
 bindsym $mod+Shift+$right mark swap, focus right, swap container with mark swap, focus right, mark --toggle swap
 
+## Workspace: Switch to Workspace 1
 bindsym $mod+1 workspace number 1
+## Workspace: Switch to Workspace 2
 bindsym $mod+2 workspace number 2
+## Workspace: Switch to Workspace 3
 bindsym $mod+3 workspace number 3
+## Workspace: Switch to Workspace 4
 bindsym $mod+4 workspace number 4
+## Workspace: Switch to Workspace 5
 bindsym $mod+5 workspace number 5
+## Workspace: Switch to Workspace 6
 bindsym $mod+6 workspace number 6
+## Workspace: Switch to Workspace 7
 bindsym $mod+7 workspace number 7
+## Workspace: Switch to Workspace 8
 bindsym $mod+8 workspace number 8
+## Workspace: Switch to Workspace 9
 bindsym $mod+9 workspace number 9
+## Workspace: Switch to Workspace 10
 bindsym $mod+0 workspace number 10
 
+## Window: Move Window to Workspace 1
 bindsym $mod+Shift+1 move container to workspace number 1
+## Window: Move Window to Workspace 2
 bindsym $mod+Shift+2 move container to workspace number 2
+## Window: Move Window to Workspace 3
 bindsym $mod+Shift+3 move container to workspace number 3
+## Window: Move Window to Workspace 4
 bindsym $mod+Shift+4 move container to workspace number 4
+## Window: Move Window to Workspace 5
 bindsym $mod+Shift+5 move container to workspace number 5
+## Window: Move Window to Workspace 6
 bindsym $mod+Shift+6 move container to workspace number 6
+## Window: Move Window to Workspace 7
 bindsym $mod+Shift+7 move container to workspace number 7
+## Window: Move Window to Workspace 8
 bindsym $mod+Shift+8 move container to workspace number 8
+## Window: Move Window to Workspace 9
 bindsym $mod+Shift+9 move container to workspace number 9
+## Window: Move Window to Workspace 10
 bindsym $mod+Shift+0 move container to workspace number 10
 
+## Window: Move Window to Previous Container
 bindsym $mod+Ctrl+Shift+$left move container to workspace prev
+## Window: Move Window to Next Container
 bindsym $mod+Ctrl+Shift+$right move container to workspace next
 
+## Window: Focus Previous Container
 bindsym $mod+Ctrl+$left workspace prev
+## Window: Focus Next Container
 bindsym $mod+Ctrl+$right workspace next
 
+## Workspace: Switch to Last Workspace
 bindsym $mod+Tab workspace back_and_forth
+## Workspace: Switch to Last Window
 bindsym $mod+grave exec sway-switch-focus
 
+## Layout: Split Horizontally
 bindsym $mod+Period splith
+## Layout: Split Vertically
 bindsym $mod+Comma splitv
 
+## Layout: Change to Stacking Layout
 bindsym $mod+s layout stacking
+## Layout: Change to Tabbed Layout
 bindsym $mod+w layout tabbed
+## Layout: Toggle Splits
 bindsym $mod+e layout toggle split
 
+## Layout: Make Window Fullscreen
 bindsym $mod+f fullscreen
+## Layout: Make Window Floating
 bindsym $mod+Shift+F floating toggle
 
+## Layout: Switch Focus in Floating and Tiled
 bindsym $mod+equal focus mode_toggle
+## Layout: Focus Parent Container
 bindsym $mod+bracketleft focus parent
+## Layout: Focus Child Container
 bindsym $mod+bracketright focus child
+## Layout: Remove Split mode from Parent Container
 bindsym $mod+n split none
 
+## Scratchpad: Move Window to Scratchpad
 bindsym $mod+Shift+Backspace move scratchpad
+## Scratchpad: Cycle Scratchpads
 bindsym $mod+Backspace scratchpad show
 
+## Scratchpad: Toggle Scratchpad on Focused Window
 bindsym $mod+Shift+equal exec sway-float-window
 
+## Control: Increase Brightness
 bindsym XF86MonBrightnessUp exec bri-control inc
+## Control: Decrease Brightness
 bindsym XF86MonBrightnessDown exec bri-control dec
 
+## Control: Increase Volume
 bindsym XF86AudioRaiseVolume exec vol-control inc
+## Control: Decrease Volume
 bindsym XF86AudioLowerVolume exec vol-control dec
+## Control: Toggle Mute
 bindsym XF86AudioMute exec vol-control mute
 
+## Control: Toggle Play/Pause on Spotify
 bindsym XF86AudioPlay exec playerctl -p spotify play-pause
+## Control: Go to Previous Song on Spotify
 bindsym XF86AudioPrev exec playerctl -p spotify previous
+## Control: Go to Next Song on Spotify
 bindsym XF86AudioNext exec playerctl -p spotify next
 
+## Control: Take Screenshot
 bindsym Print exec grimshot --notify savecopy output /home/devansh/Pictures/Screenshots/Screenshot_$(date '+%Y%m%d_%H%M%S').png
 
 mode "resize" {
-    bindsym $left resize shrink width 10px
-    bindsym $down resize shrink height 10px
-    bindsym $up resize grow height 10px
-    bindsym $right resize grow width 10px
+## Resize Mode: Decrease Width
+  bindsym $left resize shrink width 10px
+## Resize Mode: Decrease Height
+  bindsym $down resize shrink height 10px
+## Resize Mode: Increase Width
+  bindsym $up resize grow height 10px
+## Resize Mode: Increase Height
+  bindsym $right resize grow width 10px
 
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+## Resize Mode: Exit Mode
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
+## Resize Mode: Start Mode
 bindsym $mod+Shift+r mode "resize"
 
 default_border normal 4

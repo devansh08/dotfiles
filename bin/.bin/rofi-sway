@@ -1,0 +1,49 @@
+#!/bin/bash
+
+CONFIG_PATH="$HOME/.config/sway/config"
+TMP_FILE="/tmp/sway.rofi"
+
+_grep() {
+  /usr/bin/grep "$@"
+}
+
+get_binds() {
+  echo "" >$TMP_FILE
+
+  flag=1
+  _grep -A 1 --no-group-separator -E '^##' $CONFIG_PATH | while read -r line; do
+    if [[ $flag -eq 1 ]]; then
+      # Description
+      data="${line}"
+    else
+      # Bind command
+      keybind=$(echo $line | cut -d ' ' -f 2)
+      command=$(echo $line | cut -d ' ' -f 3-)
+      data="${data}%${keybind}%${command}"
+
+      echo $data >>$TMP_FILE
+    fi
+
+    flag=$((($flag + 1) % 2))
+  done
+
+  sort -t% -k1 -o $TMP_FILE $TMP_FILE
+}
+
+if [[ -z "$@" ]]; then
+  echo -e "\0prompt\x1fSway"
+
+  get_binds
+  while read -r line; do
+    echo $(echo $line | cut -d '%' -f 1 | tail -c +3)
+  done <$TMP_FILE
+else
+  case "$@" in
+  *)
+    keybind=$(_grep "$@" $TMP_FILE | head -n 1 | cut -d '%' -f 2)
+    command=$(_grep "$@" $TMP_FILE | head -n 1 | cut -d '%' -f 3)
+    swaymsg ${command} 2>/tmp/sway.rofi.err 1>/tmp/sway.rofi.out
+    notify-send -t 5000 "Action: '$@'" "Keybind: '$keybind'"
+    ;;
+  esac
+fi
