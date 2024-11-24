@@ -86,16 +86,14 @@ bindsym $mod+Shift+0 move container to workspace number 10
 bindsym $mod+Ctrl+Shift+$left move container to workspace prev
 bindsym $mod+Ctrl+Shift+$right move container to workspace next
 
-bindsym $mod+j workspace prev
-bindsym $mod+k workspace next
 bindsym $mod+Ctrl+$left workspace prev
 bindsym $mod+Ctrl+$right workspace next
 
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+grave exec sway-switch-focus
 
-bindsym $mod+b splith
-bindsym $mod+v splitv
+bindsym $mod+Period splith
+bindsym $mod+Comma splitv
 
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
@@ -107,6 +105,7 @@ bindsym $mod+Shift+F floating toggle
 bindsym $mod+equal focus mode_toggle
 bindsym $mod+bracketleft focus parent
 bindsym $mod+bracketright focus child
+bindsym $mod+n split none
 
 bindsym $mod+Shift+Backspace move scratchpad
 bindsym $mod+Backspace scratchpad show
