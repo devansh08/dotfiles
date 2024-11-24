@@ -81,7 +81,8 @@
     [activemedia-blocked]
   ) {
   stroke: transparent !important;
-  background: transparent !important;
+  /* NOTE: Breaks speaker icon in Firefox v132.0 */
+  /* background: transparent !important; */
   opacity: 1 !important;
   fill-opacity: 0.8 !important;
 
