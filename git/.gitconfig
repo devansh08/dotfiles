@@ -13,3 +13,5 @@
 	enabled = true
 [pull]
 	rebase = true
+[diff]
+	context = 3
