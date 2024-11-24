@@ -16,6 +16,25 @@ config.daemon_options = nil
 
 config.font = wezterm.font({ family = "JetBrainsMonoNL Nerd Font Mono", weight = "Light", scale = 1.0 })
 -- config.font = wezterm.font({ family = "ComicShannsMono Nerd Font Mono", scale = 1.0 })
+config.font_rules = {
+	{
+		intensity = "Bold",
+		italic = false,
+		font = wezterm.font({ family = "JetBrainsMonoNL Nerd Font Mono", weight = "Bold", scale = 1.0 }),
+		-- font = wezterm.font({ family = "ComicShannsMono Nerd Font Mono", scale = 1.0 }),
+	},
+	{
+		intensity = "Bold",
+		italic = true,
+		font = wezterm.font({
+			family = "JetBrainsMonoNL Nerd Font Mono",
+			weight = "Bold",
+			style = "Italic",
+			scale = 1.0,
+		}),
+		-- font = wezterm.font({ family = "ComicShannsMono Nerd Font Mono", scale = 1.0 }),
+	},
+}
 config.font_size = 14
 config.bold_brightens_ansi_colors = "BrightAndBold"
 config.color_scheme = "Catppuccin Mocha"
