@@ -2,7 +2,8 @@
   #navigator-toolbox {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    /* NOTE: Tab bar width breaks on Firefox v133.0 */
+    flex-direction: row-reverse;
   }
 
   #nav-bar {

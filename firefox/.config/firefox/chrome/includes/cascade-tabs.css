@@ -89,7 +89,8 @@
   color: currentColor !important;
 
   stroke: var(--toolbar-bgcolor) !important;
-  background-color: var(--toolbar-bgcolor) !important;
+  /* NOTE: Breaks speaker icon in Firefox v133.0 */
+  background-color: var(--uc-inverted-colour) !important;
 }
 
 /* change the colours of the speaker icon on active tab to match tab colours */
@@ -100,7 +101,8 @@
     [activemedia-blocked]
   ) {
   stroke: var(--toolbar-bgcolor) !important;
-  background-color: var(--toolbar-bgcolor) !important;
+  /* NOTE: Breaks speaker icon in Firefox v133.0 */
+  background-color: var(--uc-inverted-colour) !important;
 }
 
 .tab-icon-overlay:not([pinned], [sharing], [crashed]):is(

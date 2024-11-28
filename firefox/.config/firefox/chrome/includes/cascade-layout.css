@@ -23,6 +23,11 @@
   border: none !important;
 }
 
+/* NOTE: Tab bar width breaks on Firefox v133.0 */
+#toolbar-menubar {
+  display: none !important;
+}
+
 /* remove "padding" left and right from tabs */
 .titlebar-spacer {
   display: none !important;
