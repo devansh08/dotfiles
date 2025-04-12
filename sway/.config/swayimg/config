@@ -20,9 +20,9 @@ sigusr2 = next_file
 ################################################################################
 [viewer]
 # Window background color (RGBA)
-window = #1e1e2e00
+window = #1e1e2eff
 # Background for transparent images (grid/RGBA)
-transparency = grid
+transparency = #1e1e2eff
 
 # Default image scale (optimal/fit/width/height/fill/real)
 scale = optimal
