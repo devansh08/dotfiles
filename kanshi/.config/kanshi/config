@@ -6,3 +6,8 @@ profile lg-only {
     scale 1.25
   }
 }
+
+profile default {
+  output eDP-1 enable
+  output HDMI-A-1 disable
+}
