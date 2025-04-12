@@ -1,0 +1,20 @@
+#!/bin/sh
+
+val=$(ddcutil getvcp 10 --display 1 --terse | cut -d ' ' -f 4)
+
+case $1 in
+inc)
+  val=$(($val + 1))
+  ;;
+dec)
+  val=$(($val - 1))
+  ;;
+*)
+  val=$1
+  ;;
+esac
+ddcutil setvcp 10 $val --display 1
+
+# TODO: Change position of notification for bri-control to bottom-center of screen
+# https://github.com/dunst-project/dunst/issues/1018
+dunstify -t 3000 -h "int:value:$val" -h "string:x-dunst-stack-tag:bri-control" -i "/usr/share/icons/Papirus/16x16/panel/brightness-symbolic.svg" "Brightness: $val"
