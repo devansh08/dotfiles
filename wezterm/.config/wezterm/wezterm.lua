@@ -17,23 +17,23 @@ config.daemon_options = nil
 config.font = wezterm.font({ family = "JetBrainsMonoNL Nerd Font Mono", weight = "Light", scale = 1.0 })
 -- config.font = wezterm.font({ family = "ComicShannsMono Nerd Font Mono", scale = 1.0 })
 config.font_rules = {
-	{
-		intensity = "Bold",
-		italic = false,
-		font = wezterm.font({ family = "JetBrainsMonoNL Nerd Font Mono", weight = "Bold", scale = 1.0 }),
-		-- font = wezterm.font({ family = "ComicShannsMono Nerd Font Mono", scale = 1.0 }),
-	},
-	{
-		intensity = "Bold",
-		italic = true,
-		font = wezterm.font({
-			family = "JetBrainsMonoNL Nerd Font Mono",
-			weight = "Bold",
-			style = "Italic",
-			scale = 1.0,
-		}),
-		-- font = wezterm.font({ family = "ComicShannsMono Nerd Font Mono", scale = 1.0 }),
-	},
+  {
+    intensity = "Bold",
+    italic = false,
+    font = wezterm.font({ family = "JetBrainsMonoNL Nerd Font Mono", weight = "Bold", scale = 1.0 }),
+    -- font = wezterm.font({ family = "ComicShannsMono Nerd Font Mono", scale = 1.0 }),
+  },
+  {
+    intensity = "Bold",
+    italic = true,
+    font = wezterm.font({
+      family = "JetBrainsMonoNL Nerd Font Mono",
+      weight = "Bold",
+      style = "Italic",
+      scale = 1.0,
+    }),
+    -- font = wezterm.font({ family = "ComicShannsMono Nerd Font Mono", scale = 1.0 }),
+  },
 }
 config.font_size = 14
 config.bold_brightens_ansi_colors = "BrightAndBold"
@@ -64,59 +64,59 @@ config.quit_when_all_windows_are_closed = true
 config.window_close_confirmation = "NeverPrompt"
 config.window_decorations = "TITLE | RESIZE"
 config.window_padding = {
-	left = 0,
-	right = 0,
-	top = 0,
-	bottom = 0,
+  left = 0,
+  right = 0,
+  top = 0,
+  bottom = 0,
 }
 
 config.default_prog = { "/home/devansh/.bin/tmux-default" }
 config.default_cwd = "/home/devansh"
 
 for _, gpu in ipairs(wezterm.gui.enumerate_gpus()) do
-	if gpu.backend == "Vulkan" and gpu.device_type == "IntegratedGpu" then
-		config.webgpu_preferred_adapter = gpu
-		config.front_end = "WebGpu"
-		break
-	end
+  if gpu.backend == "Vulkan" and gpu.device_type == "IntegratedGpu" then
+    config.webgpu_preferred_adapter = gpu
+    config.front_end = "WebGpu"
+    break
+  end
 end
 
 config.disable_default_key_bindings = true
 config.disable_default_mouse_bindings = true
 config.keys = {
-	{ key = "Enter", mods = "ALT", action = act.ToggleFullScreen },
-	{ key = "+", mods = "CTRL", action = act.IncreaseFontSize },
-	{ key = "+", mods = "SHIFT|CTRL", action = act.IncreaseFontSize },
-	{ key = "-", mods = "CTRL", action = act.DecreaseFontSize },
-	{ key = "-", mods = "SHIFT|CTRL", action = act.DecreaseFontSize },
-	{ key = "-", mods = "SUPER", action = act.DecreaseFontSize },
-	{ key = "0", mods = "CTRL", action = act.ResetFontSize },
-	{ key = "0", mods = "SHIFT|CTRL", action = act.ResetFontSize },
-	{ key = "C", mods = "SHIFT|CTRL", action = act.CopyTo("Clipboard") },
-	{ key = "F", mods = "SHIFT|CTRL", action = act.Search("CurrentSelectionOrEmptyString") },
-	{ key = "K", mods = "SHIFT|CTRL", action = act.ClearScrollback("ScrollbackOnly") },
-	{ key = "L", mods = "SHIFT|CTRL", action = act.ShowDebugOverlay },
-	{ key = "N", mods = "SHIFT|CTRL", action = act.SpawnWindow },
-	{ key = "P", mods = "SHIFT|CTRL", action = act.ActivateCommandPalette },
-	{ key = "R", mods = "SHIFT|CTRL", action = act.ReloadConfiguration },
-	{
-		key = "U",
-		mods = "SHIFT|CTRL",
-		action = act.CharSelect({ copy_on_select = true, copy_to = "ClipboardAndPrimarySelection" }),
-	},
-	{ key = "V", mods = "SHIFT|CTRL", action = act.PasteFrom("Clipboard") },
+  { key = "Enter", mods = "ALT", action = act.ToggleFullScreen },
+  { key = "+", mods = "CTRL", action = act.IncreaseFontSize },
+  { key = "+", mods = "SHIFT|CTRL", action = act.IncreaseFontSize },
+  { key = "-", mods = "CTRL", action = act.DecreaseFontSize },
+  { key = "-", mods = "SHIFT|CTRL", action = act.DecreaseFontSize },
+  { key = "-", mods = "SUPER", action = act.DecreaseFontSize },
+  { key = "0", mods = "CTRL", action = act.ResetFontSize },
+  { key = "0", mods = "SHIFT|CTRL", action = act.ResetFontSize },
+  { key = "C", mods = "SHIFT|CTRL", action = act.CopyTo("Clipboard") },
+  { key = "F", mods = "SHIFT|CTRL", action = act.Search("CurrentSelectionOrEmptyString") },
+  -- { key = "K", mods = "SHIFT|CTRL", action = act.ClearScrollback("ScrollbackOnly") },
+  -- { key = "L", mods = "SHIFT|CTRL", action = act.ShowDebugOverlay },
+  { key = "N", mods = "SHIFT|CTRL", action = act.SpawnWindow },
+  { key = "P", mods = "SHIFT|CTRL", action = act.ActivateCommandPalette },
+  { key = "R", mods = "SHIFT|CTRL", action = act.ReloadConfiguration },
+  {
+    key = "U",
+    mods = "SHIFT|CTRL",
+    action = act.CharSelect({ copy_on_select = true, copy_to = "ClipboardAndPrimarySelection" }),
+  },
+  { key = "V", mods = "SHIFT|CTRL", action = act.PasteFrom("Clipboard") },
 }
 config.mouse_bindings = {
-	{
-		event = { Down = { streak = 1, button = { WheelUp = 1 } } },
-		mods = "",
-		action = act.ScrollByLine(-1),
-	},
-	{
-		event = { Down = { streak = 1, button = { WheelDown = 1 } } },
-		mods = "",
-		action = act.ScrollByLine(1),
-	},
+  {
+    event = { Down = { streak = 1, button = { WheelUp = 1 } } },
+    mods = "",
+    action = act.ScrollByLine(-1),
+  },
+  {
+    event = { Down = { streak = 1, button = { WheelDown = 1 } } },
+    mods = "",
+    action = act.ScrollByLine(1),
+  },
 }
 
 return config
