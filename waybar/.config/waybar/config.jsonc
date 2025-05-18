@@ -207,7 +207,7 @@
   },
   "sway/workspaces": {
     "format": "{name}",
-    "format-window-separator": " ",
+    "format-window-separator": "",
     "disable-scroll": false,
     "disable-click": false,
     "disable-scroll-wraparound": true,
