@@ -15,6 +15,10 @@
   top: 3px !important;
 }
 
+.tabbrowser-tab {
+  font-family: JetBrainsMonoNL Nerd Font Mono !important;
+}
+
 .tabbrowser-tab[selected] {
   border: 1px solid var(--uc-identity-colour-blue) !important;
 }
@@ -30,4 +34,9 @@ toolbaritem#urlbar-container {
 
 label#urlbar-one-offs-header-label {
   display: none;
+}
+
+#statuspanel #statuspanel-label {
+  background-color: var(--uc-base-colour) !important;
+  color: var(--uc-inverted-colour) !important;
 }
