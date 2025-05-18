@@ -1,6 +1,3 @@
-[credential]
-	credentialStore = secretservice
-	helper = /usr/bin/git-credential-manager
 [user]
 	name = Devansh Sharma
 [init]
