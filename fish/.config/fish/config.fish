@@ -16,7 +16,7 @@ if status --is-interactive
     set -gx GOPATH $HOME/Temp/go
 
     set -gx EDITOR vim
-    set -gx BROWSER firefox
+    set -gx BROWSER librewolf
 
     set -gx LIBVA_DRIVER_NAME i965
     set -gx QT_QPA_PLATFORMTHEME qt5ct

@@ -233,7 +233,7 @@ for_window [app_id="wezterm_float"] floating enable
 for_window [app_id="wezterm_scratch"] floating enable, move scratchpad
 
 exec swaymsg 'workspace 1; exec wezterm;'
-exec swaymsg 'workspace 2; exec firefox; layout tabbed;'
+exec swaymsg 'workspace 2; exec librewolf; layout tabbed;'
 exec swaymsg 'exec wezterm start --class="wezterm_scratch" -- fish -C yazi;'
 
 exec batt-watch
