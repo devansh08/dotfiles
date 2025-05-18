@@ -1,5 +1,5 @@
 {
-  "height": 32,
+  "height": 36,
   "spacing": 4,
   "margin": 0,
   "reload_style_on_change": true,
@@ -160,7 +160,7 @@
   },
   "mpris": {
     "interval": 1,
-    "player": "spotify",
+    "player": "YoutubeMusic",
     "format": " {dynamic}",
     "format-paused": " {dynamic}",
     "max-length": 40,
