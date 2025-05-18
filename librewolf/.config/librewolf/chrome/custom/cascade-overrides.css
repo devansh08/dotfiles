@@ -23,7 +23,11 @@
   display: none !important;
 }
 
-#urlbar-input {
+toolbaritem#urlbar-container {
   font-family: "JetBrainsMonoNL Nerd Font Mono" !important;
   font-size: 15px !important;
+}
+
+label#urlbar-one-offs-header-label {
+  display: none;
 }
