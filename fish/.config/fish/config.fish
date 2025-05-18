@@ -7,26 +7,18 @@ if status --is-interactive
     set -gx PATH $PATH $HOME/.yarn/bin $HOME/.pulumi/bin $HOME/.local/bin $JAVA_HOME/bin $HOME/.bin $HOME/.local/share/node/bin
     set -gx XDG_CONFIG_HOME $HOME/.config
 
-    set -gx NNN_BMS 'h:/home/devansh;m:/mnt;d:/home/devansh/Downloads/;w:/home/devansh/Win/Users/Devansh/'
-    set -gx NNN_FCOLORS B8B80428000606000906B806
-    set -gx NNN_FIFO '/tmp/nnn.fifo'
-    set -gx NNN_PLUG 'x:-!exec "./$nnn" & *;u:!unp -U "$nnn";m:-!xargs -0 xdg-open < $nnn;p:preview-tui;s:-!echo -n $PWD/$nnn|wl-copy*'
-    set -gx NNN_SEL '/tmp/.sel'
-
     set -gx GOPATH $HOME/Temp/go
 
-    set -gx EDITOR vim
+    set -gx EDITOR nvim
     set -gx BROWSER librewolf
 
     set -gx LIBVA_DRIVER_NAME i965
-    set -gx QT_QPA_PLATFORMTHEME qt5ct
 
     set -gx nvm_default_version lts
 
     set -gx XCURSOR_THEME Bibata-Modern-Classic
     set -gx WAYLAND_DISPLAY (basename (find /run/user/(id -u) -type s -name 'wayland-*' 2> /dev/null) 2> /dev/null)
 
-    fzf_configure_bindings --directory=\cf --git_log=\cl --git_status=\cs --history=\cr --variables=\cx --processes=\cp
     _cd_listener
     nvm use lts >/dev/null 2>&1
     fish_config theme choose "Catppuccin Mocha"
