@@ -17,6 +17,7 @@
 
 .tabbrowser-tab {
   font-family: JetBrainsMonoNL Nerd Font Mono !important;
+  font-size: 15px !important;
 }
 
 .tabbrowser-tab[selected] {
