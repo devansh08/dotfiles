@@ -157,6 +157,7 @@
     "scroll-step": 1.0,
     "tooltip": false,
     "on-click-middle": "vol-control mute",
+    "on-click": "pavucontrol",
   },
   "mpris": {
     "interval": 1,
