@@ -13,6 +13,7 @@
   ],
   "modules-right": [
     "privacy",
+    "custom/wireguard",
     "bluetooth",
     "network",
     "pulseaudio",
@@ -220,5 +221,16 @@
     "format": "",
     "tooltip": false,
     "on-click": "swaymsg 'scratchpad show'",
+  },
+  "custom/wireguard": {
+    "signal": 1,
+    "exec": "/home/devansh/.bin/waybar-wireguard -s",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "connected": "󰕥",
+      "disconnected": "󰦞",
+    },
+    "on-click": "/home/devansh/.bin/waybar-wireguard -t && pkill -SIGRTMIN+1 waybar",
   }
 }
