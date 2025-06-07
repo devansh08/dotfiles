@@ -9,5 +9,4 @@ profile lg-only {
 
 profile default {
   output eDP-1 enable
-  output HDMI-A-1 disable
 }
