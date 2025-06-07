@@ -12,7 +12,7 @@ if status --is-interactive
     set -gx EDITOR nvim
     set -gx BROWSER librewolf
 
-    set -gx LIBVA_DRIVER_NAME i965
+    set -gx QT_QPA_PLATFORM wayland
 
     set -gx nvm_default_version lts
 
