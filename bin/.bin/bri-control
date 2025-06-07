@@ -1,9 +1,29 @@
 #!/bin/sh
 
+_math() {
+  echo "$(echo "scale=2; $1" | bc)"
+}
+
+monitor=$(wlr-randr --json | jq -r ".[] | select(.enabled == true) | .name")
+
+if [[ "$monitor" = "HDMI-A-1" ]]; then
+  max=$(ddcutil getvcp 10 | awk -F'max value = *' '{print $2}')
+  cur=$(ddcutil getvcp 10 | awk -F'current value = *|,' '{print $2}')
+elif [[ "$monitor" = "eDP-1" ]]; then
+  max=$(brightnessctl -d intel_backlight max)
+  cur=$(brightnessctl -d intel_backlight get)
+fi
+per=$(_math "${cur}/${max}*100")
+
 case $1 in
-inc) xbacklight -inc 1 ;;
-dec) xbacklight -dec 1 ;;
+inc) val=$(_math "if (${per}+5 > 100) 100 else ${per}+5") ;;
+dec) val=$(_math "if (${per}-5 < 0) 0 else ${per}-5") ;;
 esac
 
-val=$(xbacklight -get)
-dunstify -t 3000 -h "int:value:$val" -h "string:x-dunst-stack-tag:bri-control" -i "/usr/share/icons/Papirus/16x16/panel/brightness-symbolic.svg" "Brightness: $val"
+if [[ "$monitor" = "HDMI-A-1" ]]; then
+  ddcutil setvcp 10 $val
+elif [[ "$monitor" = "eDP-1" ]]; then
+  brightnessctl -d intel_backlight set ${val}%
+fi
+
+dunstify -t 3000 -h "int:value:$val" -h "string:x-dunst-stack-tag:bri-control" -i "/usr/share/icons/Papirus/16x16/symbolic/status/brightness-high-symbolic.svg" "Brightness: $(echo ${val} | sed 's/\.00\|$/%/')"
