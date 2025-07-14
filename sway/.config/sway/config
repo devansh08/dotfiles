@@ -43,9 +43,9 @@ bindsym $mod+Ctrl+Return exec wezterm start --class="wezterm_float" -- fish
 bindsym $mod+q kill
 
 ## Exec: Rofi Apps
-bindsym $mod+space exec rofi -show drun 
+bindsym $mod+space exec rofi -show drun
 ## Exec: Rofi Run
-bindsym $mod+r exec rofi -no-show-icons -show run 
+bindsym $mod+r exec rofi -no-show-icons -show run
 ## Exec: Rofi Power Menu
 bindsym $mod+p exec rofi -no-show-icons -show powermenu -modi "powermenu:rofi-power-menu --choices=logout/suspend/shutdown/reboot"
 ## Exec: Rofi Calc
