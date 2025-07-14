@@ -81,3 +81,8 @@ tooltip {
 #clock {
   margin-right: 6px;
 }
+
+#custom-wireguard.connected {
+  background-color: @green;
+  color: @crust;
+}
