@@ -1,4 +1,4 @@
-xwayland disable
+xwayland enable
 
 include catppuccin-mocha
 
@@ -231,6 +231,7 @@ client.placeholder       $overlay0 $base $text  $overlay0 $overlay0
 
 for_window [app_id="wezterm_float"] floating enable
 for_window [app_id="wezterm_scratch"] floating enable, move scratchpad
+for_window [shell="xwayland"] title_format "[XWayland] %title"
 
 exec swaymsg 'workspace 1; exec wezterm;'
 exec swaymsg 'workspace 2; exec librewolf; layout tabbed;'
