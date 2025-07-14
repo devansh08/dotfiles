@@ -28,6 +28,8 @@ input "type:touchpad" {
 
 input "type:keyboard" {
   xkb_numlock enabled
+  repeat_delay 300
+  repeat_rate 30
 }
 
 ## Exec: Wezterm
