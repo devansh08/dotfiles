@@ -4,7 +4,9 @@ if status --is-interactive
     set -gx HOME /home/devansh
     set -gx JAVA_HOME /usr/lib/jvm/default
 
-    set -gx PATH $PATH $HOME/.yarn/bin $HOME/.pulumi/bin $HOME/.local/bin $JAVA_HOME/bin $HOME/.bin $HOME/.local/share/node/bin
+    set -gx ANDROID_HOME /opt/android-sdk
+
+    set -gx PATH $PATH $HOME/.yarn/bin $HOME/.pulumi/bin $HOME/.local/bin $JAVA_HOME/bin $HOME/.bin $HOME/.local/share/node/bin $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools $ANDROID_HOME/build-tools
     set -gx XDG_CONFIG_HOME $HOME/.config
 
     set -gx GOPATH $HOME/Temp/go
