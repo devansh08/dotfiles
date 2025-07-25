@@ -1,4 +1,13 @@
-profile lg-only {
+profile lg-1 {
+  output eDP-1 disable
+  output HDMI-A-1 {
+    enable
+    mode 2560x1440@75Hz
+    scale 1
+  }
+}
+
+profile lg-1-25 {
   output eDP-1 disable
   output HDMI-A-1 {
     enable
