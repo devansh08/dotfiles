@@ -32,15 +32,16 @@ input "type:keyboard" {
   repeat_rate 30
 }
 
-## Exec: Wezterm
-bindsym $mod+Return exec wezterm
-## Exec: Wezterm default
-bindsym $mod+Shift+Return exec wezterm start -- fish
-## Exec: Wezterm default in float mode
-bindsym $mod+Ctrl+Return exec wezterm start --class="wezterm_float" -- fish
+## Exec: Kitty
+bindsym $mod+Return exec kitty -o allow_remote_control=yes
+## Exec: Kitty in float mode
+bindsym $mod+Ctrl+Return exec kitty -o allow_remote_control=yes --class="kitty_float"
 
 ## Sway: Close Window
 bindsym $mod+q kill
+
+## Exec: Yazi
+bindsym $mod+ctrl+e exec kitty --class="kitty_float" --hold yazi
 
 ## Exec: Rofi Apps
 bindsym $mod+space exec rofi -show drun
@@ -233,11 +234,12 @@ client.placeholder       $overlay0 $base $text  $overlay0 $overlay0
 
 for_window [app_id="wezterm_float"] floating enable
 for_window [app_id="wezterm_scratch"] floating enable, move scratchpad
+for_window [app_id="kitty_float"] floating enable, resize set 1920 1080
+for_window [app_id="kitty_scratch"] floating enable, resize set 1920 1080, move scratchpad
 for_window [shell="xwayland"] title_format "[XWayland] %title"
 
-exec swaymsg 'workspace 1; exec wezterm;'
+exec swaymsg 'workspace 1; layout tabbed; exec ~/.config/kitty/scripts/restore_session.sh;'
 exec swaymsg 'workspace 2; exec librewolf; layout tabbed;'
-exec swaymsg 'exec wezterm start --class="wezterm_scratch" -- fish -C yazi;'
 
 exec batt-watch
 exec sway-track-focus
