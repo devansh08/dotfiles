@@ -30,3 +30,5 @@ text-wrong-color=eba0ac
 font=JetBrainsMonoNL Nerd Font Mono
 font-size=24
 indicator-idle-visible
+indicator-radius=100
+indicator-thickness=15
