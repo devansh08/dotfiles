@@ -235,6 +235,10 @@ if (activeOsWindow) {
             }
           }
         }
+
+        if (tab.is_active && window.is_active) {
+          console.log("focus");
+        }
       }
     });
   });
