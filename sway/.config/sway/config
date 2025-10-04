@@ -237,6 +237,8 @@ for_window [app_id="wezterm_scratch"] floating enable, move scratchpad
 for_window [app_id="kitty_float"] floating enable, resize set 1920 1080
 for_window [app_id="kitty_scratch"] floating enable, resize set 1920 1080, move scratchpad
 for_window [shell="xwayland"] title_format "[XWayland] %title"
+for_window [app_id="qalculate-gtk"] floating enable
+for_window [app_id="xdg-desktop-portal-gtk"] floating enable
 
 exec swaymsg 'workspace 1; layout tabbed; exec ~/.config/kitty/scripts/restore_session.sh;'
 exec swaymsg 'workspace 2; exec librewolf; layout tabbed;'
