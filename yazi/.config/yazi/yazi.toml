@@ -29,7 +29,7 @@ ueberzug_offset = [0, 0, 0, 0]
 
 [opener]
 edit = [
-  { run = '${EDITOR:-vi} "$@"', desc = "Edit", block = true, for = "unix" },
+  { run = '${EDITOR:-nvim} "$@"', desc = "Edit", block = true, for = "unix" },
 ]
 open = [{ run = 'xdg-open "$1"', desc = "Open", for = "linux" }]
 reveal = [
