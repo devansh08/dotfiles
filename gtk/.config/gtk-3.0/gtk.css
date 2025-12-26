@@ -1,0 +1,9 @@
+tooltip * {
+  background: transparent;
+}
+tooltip,
+tooltip.background {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  opacity: 1;
+}
