@@ -8,6 +8,7 @@
 ### bin
 - Add `~/.bin` to `PATH`
 - Set `command` in `/etc/greetd/config.toml` to command in `bin/.bin/tuigreet-custom`
+- Install custom packages from `PKGBUILD`s in `~/.bin`
 
 ### Librewolf
 - Symlink `.mozilla/librewolf/<profile-id>.default-release/chrome` to `~/.config/librewolf/chrome`
