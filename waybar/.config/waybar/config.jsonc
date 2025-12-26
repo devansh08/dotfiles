@@ -158,7 +158,7 @@
     "scroll-step": 1.0,
     "tooltip": false,
     "on-click-middle": "vol-control mute",
-    "on-click": "pavucontrol",
+    "on-click": "kitty --class='kitty_float' wiremix",
   },
   "mpris": {
     "interval": 1,
@@ -184,7 +184,7 @@
     "tooltip": true,
     "tooltip-format-wifi": "Interface:\t{ifname}\nStrength:\t{signalStrength}%\nIP Address:\t{ipaddr}",
     "tooltip-format-ethernet": "Interface:\t{ifname}",
-    "on-click": "rofi-wifi",
+    "on-click": "kitty --class='kitty_float' impala",
   },
   "privacy": {
     "icon-spacing": 4,
