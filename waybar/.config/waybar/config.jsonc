@@ -162,7 +162,7 @@
   },
   "mpris": {
     "interval": 1,
-    "player": "YoutubeMusic",
+    "player": "cmus",
     "format": " {dynamic}",
     "format-paused": " {dynamic}",
     "max-length": 40,
