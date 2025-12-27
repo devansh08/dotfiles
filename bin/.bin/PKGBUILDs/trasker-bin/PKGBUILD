@@ -1,22 +1,21 @@
 # Maintainer: Devansh Sharma <devansh.sharma@gmail.com>
 pkgname=trasker-bin
-pkgver=1.1.0
+pkgver=1.1.2
 pkgrel=1
 pkgdesc="Simple project level file based task tracker"
-arch=('x86_64')
+arch=("x86_64")
 url="https://github.com/devansh08/trasker"
-license=('MIT')
-depends=()
-source=("https://github.com/devansh08/trasker/releases/download/v${pkgver}/trasker-linux-amd64")
-sha256sums=('SKIP')
+license=("MIT")
+
+source=("trasker-${pkgver}::https://github.com/devansh08/trasker/releases/latest/download/trasker-linux-amd64")
+noextract=("trasker")
+sha256sums=("SKIP")
 
 pkgver() {
   curl -s "https://api.github.com/repos/devansh08/trasker/releases/latest" |
-    grep '"tag_name"' |
-    sed -E 's/.*"([^"]+)".*/\1/' |
-    sed 's/^v//'
+    sed -n 's/  \"tag_name\": \"v\(.*\)\",/\1/p'
 }
 
 package() {
-  install -Dm755 trasker-linux-amd64 "$pkgdir/usr/bin/trasker"
+  install -Dm755 "${srcdir}/trasker-${pkgver}" "${pkgdir}/usr/bin/trasker"
 }
