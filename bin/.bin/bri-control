@@ -9,16 +9,19 @@ monitor=$(wlr-randr --json | jq -r ".[] | select(.enabled == true) | .name")
 if [[ "$monitor" = "HDMI-A-1" ]]; then
   max=$(ddcutil getvcp 10 | awk -F'max value = *' '{print $2}')
   cur=$(ddcutil getvcp 10 | awk -F'current value = *|,' '{print $2}')
+  del=25
 elif [[ "$monitor" = "eDP-1" ]]; then
   max=$(brightnessctl -d intel_backlight max)
   cur=$(brightnessctl -d intel_backlight get)
+  del=5
 fi
 per=$(_math "${cur}/${max}*100")
 
 case $1 in
-inc) val=$(_math "if (${per}+5 > 100) 100 else ${per}+5") ;;
-dec) val=$(_math "if (${per}-5 < 0) 0 else ${per}-5") ;;
+inc) val=$(_math "if (${per}+${del} > 100) 100 else ${per}+${del}") ;;
+dec) val=$(_math "if (${per}-${del} < 0) 0 else ${per}-${del}") ;;
 esac
+val=${val%.00}
 
 if [[ "$monitor" = "HDMI-A-1" ]]; then
   ddcutil setvcp 10 $val
