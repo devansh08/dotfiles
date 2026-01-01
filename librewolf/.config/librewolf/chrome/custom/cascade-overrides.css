@@ -41,3 +41,11 @@ label#urlbar-one-offs-header-label {
   background-color: var(--uc-base-colour) !important;
   color: var(--uc-inverted-colour) !important;
 }
+
+toolbarbutton#sidebar-button {
+  display: none;
+}
+
+hbox#nav-bar-customization-target {
+  padding-left: 2px;
+}
