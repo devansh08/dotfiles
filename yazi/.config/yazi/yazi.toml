@@ -23,7 +23,6 @@ cache_dir = ""
 image_delay = 50
 image_filter = "triangle"
 image_quality = 90
-sixel_fraction = 15
 ueberzug_scale = 1
 ueberzug_offset = [0, 0, 0, 0]
 
@@ -121,8 +120,6 @@ preloaders = [
   { mime = "image/{avif,hei?,jxl}", run = "magick" },
   { mime = "image/svg+xml", run = "svg" },
   { mime = "image/*", run = "image" },
-  # Video
-  { mime = "video/*", run = "video" },
   # PDF
   { mime = "application/pdf", run = "pdf" },
   # Font
