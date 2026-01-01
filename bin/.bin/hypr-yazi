@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if hyprctl clients -j | jq -e '.[] | select(.workspace.name == "special:yazi")' >/dev/null; then
+  hyprctl dispatch togglespecialworkspace yazi
+else
+  hyprctl dispatch exec "[workspace special:yazi; float on; size 1920 1080; center on] kitty -- yazi"
+fi

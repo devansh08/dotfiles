@@ -1,0 +1,17 @@
+#!/bin/bash
+
+dir="$1"
+wsid=$(hyprctl activeworkspace -j | jq -c '.id')
+
+gids=$(hyprctl clients -j | jq -c ".[] | select(.workspace.id == $wsid) | .grouped" | uniq)
+echo $gids
+echo $(echo "$gids" | wc -l)
+if [[ $(echo "$gids" | wc -l) -eq 1 && "$gids" != "[]" ]]; then
+  if [[ "$dir" == "l" ]]; then
+    hyprctl dispatch changegroupactive b
+  elif [[ "$dir" == "r" ]]; then
+    hyprctl dispatch changegroupactive f
+  fi
+else
+  hyprctl dispatch movefocus "$dir"
+fi

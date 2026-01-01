@@ -4,9 +4,8 @@
   "margin": 0,
   "reload_style_on_change": true,
   "modules-left": [
-    "sway/workspaces",
-    "sway/mode",
-    "custom/scratchpad",
+    "hyprland/workspaces",
+    "hyprland/submap",
   ],
   "modules-center": [
     "mpris",
@@ -203,24 +202,14 @@
       }
     ]
   },
-  "sway/mode": {
-    "format": "{}",
-    "tooltip": false,
-  },
-  "sway/workspaces": {
+  "hyprland/workspaces": {
     "format": "{name}",
     "format-window-separator": "",
-    "disable-scroll": false,
-    "disable-click": false,
-    "disable-scroll-wraparound": true,
-    "enable-bar-scroll": false,
+    "show-special": false,
   },
-  "custom/scratchpad": {
-    "interval": 2,
-    "exec": "swaymsg -t get_tree | jq 'recurse(.nodes[]) | first(select(.name==\"__i3_scratch\")) | .floating_nodes | length | select(. >= 1)'",
-    "format": "",
+  "hyprland/submap": {
+    "format": "{}",
     "tooltip": false,
-    "on-click": "swaymsg 'scratchpad show'",
   },
   "custom/wireguard": {
     "signal": 1,

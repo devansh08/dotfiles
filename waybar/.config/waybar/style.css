@@ -20,12 +20,12 @@ tooltip {
 .module {
   margin: -1px 6px;
   padding: 0px 6px;
-  box-shadow: inset 0 -3px @blue;
+  box-shadow: inset 0 -4px @blue;
   transition: box-shadow 0.1s ease;
 }
 
 .module:hover {
-  box-shadow: inset 0 -4px @blue;
+  box-shadow: inset 0 -6px @blue;
 }
 
 #battery.warning {
@@ -69,8 +69,13 @@ tooltip {
   background-color: @surface0;
 }
 
-#workspaces button.focused {
-  box-shadow: inset 0 -2px @blue;
+#workspaces button.active {
+  box-shadow: inset 0 -3px @blue;
+}
+
+#workspaces button.active:hover {
+  box-shadow: inset 0 -5px @blue;
+  transition: box-shadow 0.1s ease;
 }
 
 #workspaces button.urgent {
