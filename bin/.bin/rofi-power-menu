@@ -25,7 +25,7 @@ texts[reboot]="reboot"
 declare -A actions
 actions[lock]="hyprlock"
 actions[logout]="swaymsg exit"
-actions[suspend]="hyprlock & sleep 1 && systemctl suspend"
+actions[suspend]="hyprlock 2>&1 > /dev/null & sleep 1 && systemctl suspend"
 actions[shutdown]="systemctl poweroff"
 actions[reboot]="systemctl reboot"
 
