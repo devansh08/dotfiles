@@ -29,7 +29,7 @@ edit = [
   { run = '${EDITOR:-nvim} "$@"', desc = "Edit", block = true, for = "unix" },
 ]
 open = [
-  { run = 'hyprctl dispatch exec "[workspace $(hyprctl activeworkspace -j | jq -r \".id\")] xdg-open \"$1\""', desc = "Open", for = "linux" },
+  { run = 'hyprctl dispatch exec "[workspace e+0] xdg-open \"$1\""', desc = "Open", for = "linux" },
 ]
 extOpen = [
   { run = 'clear; echo -n "Enter program name: "; read prog; "$prog" "$1"', block = true, desc = "Open with External program", for = "linux" },
