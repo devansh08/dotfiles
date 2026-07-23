@@ -25,9 +25,5 @@ if status --is-interactive
     set -gx nvm_default_version lts
     nvm use lts >/dev/null 2>&1
 
-    set -gx EZA_COLORS (cat $HOME/.config/eza/colors)
-    set -gx LSCOLORS Gxfxcxdxbxegedabagacad
-    set -gx LS_COLORS (cat $HOME/.config/ls/colors)
-
     _cd_listener
 end
