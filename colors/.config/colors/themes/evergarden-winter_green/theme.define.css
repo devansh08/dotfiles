@@ -1,0 +1,35 @@
+/* Theme: evergarden */
+/* Variant: winter */
+/* Primary Color: #green */
+@define-color bg_main #1e2528;
+@define-color bg_surface #262f33;
+@define-color bg_overlay #58686d;
+@define-color bg_selection #cbe3b3;
+@define-color fg_main #f8f9e8;
+@define-color fg_muted #adc9bc;
+@define-color fg_selection #262f33;
+@define-color accent_primary #cbe3b3;
+@define-color accent_secondary #b2caed;
+@define-color accent_tertiary #f7a182;
+@define-color status_success #cbe3b3;
+@define-color status_warning #f7a182;
+@define-color status_error #f57f82;
+@define-color status_info #b2caed;
+@define-color border_inactive #262f33;
+@define-color border_active #cbe3b3;
+@define-color color0 #171c1f;
+@define-color color8 #1e2528;
+@define-color color1 #f57f82;
+@define-color color9 #f7a182;
+@define-color color2 #cbe3b3;
+@define-color color10 #dbe6af;
+@define-color color3 #f7a182;
+@define-color color11 #f5d098;
+@define-color color4 #b2caed;
+@define-color color12 #afd9e6;
+@define-color color5 #d2bdf3;
+@define-color color13 #f3c0e5;
+@define-color color6 #b3e6db;
+@define-color color14 #afd9e6;
+@define-color color7 #fae6ef;
+@define-color color15 #f8f9e8;

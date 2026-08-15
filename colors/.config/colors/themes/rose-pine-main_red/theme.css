@@ -1,0 +1,38 @@
+/* Theme: rose-pine */
+/* Variant: main */
+/* Primary Color: #red */
+
+:root {
+  --color-bg_main: #191724;
+  --color-bg_surface: #26233a;
+  --color-bg_overlay: #403d52;
+  --color-bg_selection: #eb6f92;
+  --color-fg_main: #e0def4;
+  --color-fg_muted: #908caa;
+  --color-fg_selection: #1f1d2e;
+  --color-accent_primary: #eb6f92;
+  --color-accent_secondary: #31748f;
+  --color-accent_tertiary: #95b1ac;
+  --color-status_success: #95b1ac;
+  --color-status_warning: #f6c177;
+  --color-status_error: #eb6f92;
+  --color-status_info: #31748f;
+  --color-border_inactive: #1f1d2e;
+  --color-border_active: #eb6f92;
+  --color-color0: #16141f;
+  --color-color8: #1f1d2e;
+  --color-color1: #eb6f92;
+  --color-color9: #ebbcba;
+  --color-color2: #95b1ac;
+  --color-color10: #9ccfd8;
+  --color-color3: #f6c177;
+  --color-color11: #f6c177;
+  --color-color4: #31748f;
+  --color-color12: #9ccfd8;
+  --color-color5: #c4a7e7;
+  --color-color13: #c4a7e7;
+  --color-color6: #9ccfd8;
+  --color-color14: #9ccfd8;
+  --color-color7: #e0def4;
+  --color-color15: #e0def4;
+}

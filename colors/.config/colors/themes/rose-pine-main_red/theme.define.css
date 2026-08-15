@@ -1,0 +1,35 @@
+/* Theme: rose-pine */
+/* Variant: main */
+/* Primary Color: #red */
+@define-color bg_main #191724;
+@define-color bg_surface #26233a;
+@define-color bg_overlay #403d52;
+@define-color bg_selection #eb6f92;
+@define-color fg_main #e0def4;
+@define-color fg_muted #908caa;
+@define-color fg_selection #1f1d2e;
+@define-color accent_primary #eb6f92;
+@define-color accent_secondary #31748f;
+@define-color accent_tertiary #95b1ac;
+@define-color status_success #95b1ac;
+@define-color status_warning #f6c177;
+@define-color status_error #eb6f92;
+@define-color status_info #31748f;
+@define-color border_inactive #1f1d2e;
+@define-color border_active #eb6f92;
+@define-color color0 #16141f;
+@define-color color8 #1f1d2e;
+@define-color color1 #eb6f92;
+@define-color color9 #ebbcba;
+@define-color color2 #95b1ac;
+@define-color color10 #9ccfd8;
+@define-color color3 #f6c177;
+@define-color color11 #f6c177;
+@define-color color4 #31748f;
+@define-color color12 #9ccfd8;
+@define-color color5 #c4a7e7;
+@define-color color13 #c4a7e7;
+@define-color color6 #9ccfd8;
+@define-color color14 #9ccfd8;
+@define-color color7 #e0def4;
+@define-color color15 #e0def4;

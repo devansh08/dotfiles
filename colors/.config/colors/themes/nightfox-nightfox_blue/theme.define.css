@@ -1,0 +1,35 @@
+/* Theme: nightfox */
+/* Variant: nightfox */
+/* Primary Color: #blue */
+@define-color bg_main #212e3f;
+@define-color bg_surface #29394f;
+@define-color bg_overlay #39506d;
+@define-color bg_selection #719cd6;
+@define-color fg_main #dfdfe0;
+@define-color fg_muted #aeafb0;
+@define-color fg_selection #29394f;
+@define-color accent_primary #719cd6;
+@define-color accent_secondary #81b29a;
+@define-color accent_tertiary #c94f6d;
+@define-color status_success #81b29a;
+@define-color status_warning #f4a261;
+@define-color status_error #c94f6d;
+@define-color status_info #719cd6;
+@define-color border_inactive #29394f;
+@define-color border_active #719cd6;
+@define-color color0 #131a24;
+@define-color color8 #39506d;
+@define-color color1 #ab435d;
+@define-color color9 #d16983;
+@define-color color2 #6e9783;
+@define-color color10 #8ebaa4;
+@define-color color3 #baa363;
+@define-color color11 #e0c989;
+@define-color color4 #6085b6;
+@define-color color12 #86abdc;
+@define-color color5 #8567b6;
+@define-color color13 #baa1e2;
+@define-color color6 #54aeb0;
+@define-color color14 #7ad5d6;
+@define-color color7 #dfdfe0;
+@define-color color15 #e4e4e5;

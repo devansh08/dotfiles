@@ -1,6 +1,6 @@
 /* NOTE: Use `env GTK_DEBUG=interactive waybar` to open a live insepector for waybar elements */
 
-@import "mocha.css";
+@import "theme.css";
 
 * {
   font-family: "JetBrainsMonoNL Nerd Font Mono";
@@ -8,45 +8,30 @@
 }
 
 window#waybar {
-  background-color: @mantle;
-  color: @text;
+  background-color: @bg_main;
+  color: @fg_main;
 }
 
 tooltip {
-  background-color: @mantle;
-  color: @text;
+  background-color: @bg_main;
+  color: @fg_main;
 }
 
 .module {
   margin: -1px 6px;
   padding: 0px 6px;
-  box-shadow: inset 0 -4px @blue;
+  box-shadow: inset 0 -4px @accent_primary;
   transition: box-shadow 0.1s ease;
 }
 
 .module:hover {
-  box-shadow: inset 0 -6px @blue;
-}
-
-#battery.warning {
-  background-color: @peach;
-  color: @crust;
-}
-
-#battery.critical {
-  background-color: @red;
-  color: @crust;
-}
-
-#battery.charging {
-  background-color: @mantle;
-  color: @blue;
+  box-shadow: inset 0 -6px @accent_primary;
 }
 
 .clock-child,
 .hardware-child {
-  background-color: @blue;
-  color: @crust;
+  background-color: @accent_primary;
+  color: @fg_selection;
 }
 
 #workspaces {
@@ -57,7 +42,7 @@ tooltip {
   border: 1px solid transparent;
   border-radius: 0px;
   padding: 0 6px;
-  color: @text;
+  color: @fg_main;
   text-shadow: none;
   background-image: none;
   box-shadow: none;
@@ -66,21 +51,21 @@ tooltip {
 
 #workspaces button:hover {
   border: 1px solid transparent;
-  background-color: @surface0;
+  background-color: @bg_overlay;
 }
 
 #workspaces button.active {
-  box-shadow: inset 0 -3px @blue;
+  box-shadow: inset 0 -3px @accent_primary;
 }
 
 #workspaces button.active:hover {
-  box-shadow: inset 0 -5px @blue;
+  box-shadow: inset 0 -5px @accent_primary;
   transition: box-shadow 0.1s ease;
 }
 
 #workspaces button.urgent {
-  background-color: @peach;
-  color: @crust;
+  background-color: @status_warning;
+  color: @fg_selection;
 }
 
 #clock {
@@ -88,6 +73,6 @@ tooltip {
 }
 
 #custom-wireguard.connected {
-  background-color: @green;
-  color: @crust;
+  background-color: @accent_secondary;
+  color: @fg_selection;
 }

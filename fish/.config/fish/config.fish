@@ -1,6 +1,11 @@
 if status --is-interactive
     bind alt-backspace backward-kill-word
-    fish_config theme choose "Catppuccin Mocha"
+    bind ctrl-left backward-word
+    bind ctrl-right forward-word
+    bind alt-left backward-token
+    bind alt-right forward-token
+
+    fish_config theme choose theme
 
     set fish_greeting
 

@@ -1,0 +1,38 @@
+/* Theme: tokyonight */
+/* Variant: night */
+/* Primary Color: #blue */
+
+:root {
+  --color-bg_main: #1a1b26;
+  --color-bg_surface: #1f2231;
+  --color-bg_overlay: #545c7e;
+  --color-bg_selection: #7aa2f7;
+  --color-fg_main: #c0caf5;
+  --color-fg_muted: #a9b1d6;
+  --color-fg_selection: #1a1b26;
+  --color-accent_primary: #7aa2f7;
+  --color-accent_secondary: #9ece6a;
+  --color-accent_tertiary: #f7768e;
+  --color-status_success: #9ece6a;
+  --color-status_warning: #ff9e64;
+  --color-status_error: #db4b4b;
+  --color-status_info: #7aa2f7;
+  --color-border_inactive: #737aa2;
+  --color-border_active: #7aa2f7;
+  --color-color0: #0c0e14;
+  --color-color8: #1a1b26;
+  --color-color1: #db4b4b;
+  --color-color9: #f7768e;
+  --color-color2: #9ece6a;
+  --color-color10: #9fe044;
+  --color-color3: #e0af68;
+  --color-color11: #faba4a;
+  --color-color4: #7aa2f7;
+  --color-color12: #2ac3de;
+  --color-color5: #bb9af7;
+  --color-color13: #ff007c;
+  --color-color6: #7dcfff;
+  --color-color14: #89ddff;
+  --color-color7: #a9b1d6;
+  --color-color15: #c0caf5;
+}

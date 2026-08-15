@@ -1,0 +1,102 @@
+colourful: true
+
+filekinds:
+  normal: { foreground: "{{fg_muted}}" }
+  directory: { foreground: "{{accent_primary}}" }
+  symlink: { foreground: "{{status_info}}" }
+  pipe: { foreground: "{{fg_muted}}" }
+  block_device: { foreground: "{{status_warning}}" }
+  char_device: { foreground: "{{status_warning}}" }
+  socket: { foreground: "{{fg_muted}}" }
+  special: { foreground: "{{accent_tertiary}}" }
+  executable: { foreground: "{{status_success}}" }
+  mount_point: { foreground: "{{accent_secondary}}" }
+
+perms:
+  user_read: { foreground: "{{fg_muted}}" }
+  user_write: { foreground: "{{accent_primary}}" }
+  user_execute_file: { foreground: "{{status_success}}" }
+  user_execute_other: { foreground: "{{status_success}}" }
+  group_read: { foreground: "{{fg_muted}}" }
+  group_write: { foreground: "{{status_warning}}" }
+  group_execute: { foreground: "{{status_success}}" }
+  other_read: { foreground: "{{fg_muted}}" }
+  other_write: { foreground: "{{status_error}}" }
+  other_execute: { foreground: "{{status_success}}" }
+  special_user_file: { foreground: "{{status_error}}" }
+  special_other: { foreground: "{{status_error}}" }
+  attribute: { foreground: "{{fg_muted}}" }
+
+size:
+  major: { foreground: "{{fg_muted}}" }
+  minor: { foreground: "{{accent_tertiary}}" }
+  number_byte: { foreground: "{{fg_muted}}" }
+  number_kilo: { foreground: "{{fg_muted}}" }
+  number_mega: { foreground: "{{fg_muted}}" }
+  number_giga: { foreground: "{{status_warning}}" }
+  number_huge: { foreground: "{{status_error}}" }
+  unit_byte: { foreground: "{{fg_muted}}" }
+  unit_kilo: { foreground: "{{fg_muted}}" }
+  unit_mega: { foreground: "{{fg_muted}}" }
+  unit_giga: { foreground: "{{status_warning}}" }
+  unit_huge: { foreground: "{{status_error}}" }
+
+users:
+  user_you: { foreground: "{{accent_primary}}" }
+  user_root: { foreground: "{{status_error}}" }
+  user_other: { foreground: "{{fg_muted}}" }
+  group_yours: { foreground: "{{accent_secondary}}" }
+  group_root: { foreground: "{{status_error}}" }
+  group_other: { foreground: "{{fg_muted}}" }
+
+links:
+  normal: { foreground: "{{status_info}}" }
+  multi_link_file: { foreground: "{{accent_primary}}" }
+
+git:
+  new: { foreground: "{{status_success}}" }
+  modified: { foreground: "{{accent_secondary}}" }
+  deleted: { foreground: "{{status_error}}" }
+  renamed: { foreground: "{{status_info}}" }
+  typechange: { foreground: "{{status_warning}}" }
+  ignored: { foreground: "{{fg_muted}}" }
+  conflicted: { foreground: "{{status_error}}" }
+
+git_repo:
+  branch_main: { foreground: "{{fg_muted}}" }
+  branch_other: { foreground: "{{accent_primary}}" }
+  git_clean: { foreground: "{{fg_muted}}" }
+  git_dirty: { foreground: "{{status_warning}}" }
+
+security_context:
+  colon: { foreground: "{{fg_muted}}" }
+  user: { foreground: "{{fg_muted}}" }
+  role: { foreground: "{{accent_primary}}" }
+  typ: { foreground: "{{status_info}}" }
+  range: { foreground: "{{accent_tertiary}}" }
+
+file_type:
+  image: { foreground: "{{status_info}}" }
+  video: { foreground: "{{status_info}}" }
+  music: { foreground: "{{accent_secondary}}" }
+  lossless: { foreground: "{{status_info}}" }
+  crypto: { foreground: "{{status_error}}" }
+  document: { foreground: "{{fg_muted}}" }
+  compressed: { foreground: "{{status_warning}}" }
+  temp: { foreground: "{{fg_muted}}" }
+  compiled: { foreground: "{{fg_muted}}" }
+  build: { foreground: "{{accent_secondary}}" }
+  source: { foreground: "{{fg_main}}" }
+
+punctuation: { foreground: "{{fg_muted}}" }
+date: { foreground: "{{status_warning}}" }
+inode: { foreground: "{{fg_muted}}" }
+blocks: { foreground: "{{fg_muted}}" }
+header: { foreground: "{{fg_muted}}" }
+octal: { foreground: "{{status_warning}}" }
+flags: { foreground: "{{accent_primary}}" }
+
+symlink_path: { foreground: "{{status_info}}" }
+control_char: { foreground: "{{status_warning}}" }
+broken_symlink: { foreground: "{{status_error}}" }
+broken_path_overlay: { foreground: "{{status_error}}" }

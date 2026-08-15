@@ -1,0 +1,72 @@
+{
+  "btop": {
+    "file": "~/.config/btop/themes/theme.theme",
+    "template": "~/.config/btop/themes/theme_template.theme",
+    "template_pattern": "{{[a-z0-9_]+}}"
+  },
+  "dunst": {
+    "file": "~/.config/dunst/dunstrc",
+    "template": "~/.config/dunst/dunstrc_template",
+    "template_pattern": "{{[a-z0-9_]+}}"
+  },
+  "eza": {
+    "file": "~/.config/eza/theme.yml",
+    "template": "~/.config/eza/theme_template.yml",
+    "template_pattern": "{{[a-z0-9_]+}}"
+  },
+  "fish": {
+    "file": "~/.config/fish/themes/theme.theme",
+    "template": "~/.config/fish/themes/theme_template.theme",
+    "template_pattern": "{{[a-z0-9_]+}}",
+    "skip_hash": true
+  },
+  "hyprland": {
+    "file": "~/.config/hypr/theme.lua",
+    "theme_file": "theme.lua"
+  },
+  "hyprlock": {
+    "file": "~/.config/hypr/hyprlock.conf",
+    "template": "~/.config/hypr/hyprlock_template.conf",
+    "template_pattern": "{{[a-z0-9_]+}}",
+    "skip_hash": true
+  },
+  "kitty": {
+    "file": "~/.config/kitty/theme.conf",
+    "template": "~/.config/kitty/template.conf",
+    "template_pattern": "{{[a-z0-9_]+}}"
+  },
+  "librewolf": {
+    "file": "~/.config/librewolf/chrome/includes/cascade-theme.css",
+    "template": "~/.config/librewolf/chrome/includes/cascade-template.css",
+    "template_pattern": "'[a-z0-9_]+'"
+  },
+  "nvim": {
+    "file": "~/.config/nvim/lua/colors.lua",
+    "theme_file": "theme.lua"
+  },
+  "pi": {
+    "file": "~/.pi/agent/themes/theme.json",
+    "template": "~/.pi/agent/themes/template",
+    "template_pattern": "{{[a-z0-9_]+}}"
+  },
+  "rofi": {
+    "file": "~/.config/rofi/theme.rasi",
+    "template": "~/.config/rofi/theme_template.rasi",
+    "template_pattern": "{{[a-z0-9_]+}}"
+  },
+  "swayimg": {
+    "file": "~/.config/swayimg/theme.lua",
+    "template": "~/.config/swayimg/theme_template.lua",
+    "template_pattern": "{{[a-z0-9_]+}}",
+    "skip_hash": true
+  },
+  "waybar": {
+    "file": "~/.config/waybar/theme.css",
+    "theme_file": "theme.define.css"
+  },
+  "yazi": {
+    "file": "~/.config/yazi/theme.toml",
+    "template": "~/.config/yazi/theme_template.toml",
+    "template_pattern": "{{[a-z0-9_]+}}"
+  }
+}

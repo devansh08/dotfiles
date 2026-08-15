@@ -1,0 +1,96 @@
+/*---+---+---+---+---+---+---+
+ | C | O | L | O | U | R | S |
+ +---+---+---+---+---+---+---*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Container Tabs colors */
+    --uc-identity-color-blue: #4d7d90;
+    --uc-identity-color-turquoise: #73a3b7;
+    --uc-identity-color-green: #688b89;
+    --uc-identity-color-yellow: #fdb292;
+    --uc-identity-color-orange: #d78b6c;
+    --uc-identity-color-red: #c54e45;
+    --uc-identity-color-pink: #eb746b;
+    --uc-identity-color-purple: #934e69;
+
+    /*  Cascades main color Scheme */
+    --uc-base-color: #1d3337;
+    --uc-highlight-color: #254147;
+    --uc-overlay-color: #2d4f56;
+    --uc-inverted-color: #ebebeb;
+    --uc-muted-color: #cbd9d8;
+    --uc-accent-color: #7aa4a1;
+  }
+}
+
+:root {
+  --lwt-frame: var(--uc-base-color) !important;
+  --lwt-accent-color: var(--lwt-frame) !important;
+  --lwt-text-color: var(--uc-inverted-color) !important;
+
+  --toolbar-field-color: var(--uc-inverted-color) !important;
+
+  --toolbar-field-focus-color: var(--uc-inverted-color) !important;
+  --toolbar-field-focus-background-color: var(--uc-highlight-color) !important;
+  --toolbar-field-focus-border-color: transparent !important;
+
+  --toolbar-field-background-color: var(--lwt-frame) !important;
+  --lwt-toolbar-field-highlight: var(--uc-inverted-color) !important;
+  --lwt-toolbar-field-highlight-text: var(--uc-highlight-color) !important;
+  --urlbar-popup-url-color: var(--uc-accent-color) !important;
+
+  --lwt-tab-text: var(--lwt-text-color) !important;
+
+  --lwt-selected-tab-background-color: var(--uc-highlight-color) !important;
+
+  --toolbar-bgcolor: var(--lwt-frame) !important;
+  --toolbar-color: var(--lwt-text-color) !important;
+  --toolbarseparator-color: var(--uc-accent-color) !important;
+  --toolbarbutton-hover-background: var(--uc-highlight-color) !important;
+  --toolbarbutton-active-background: var(
+    --toolbarbutton-hover-background
+  ) !important;
+
+  --lwt-sidebar-background-color: var(--lwt-frame) !important;
+  --sidebar-background-color: var(--lwt-sidebar-background-color) !important;
+
+  --urlbar-box-bgcolor: var(--uc-highlight-color) !important;
+  --urlbar-box-text-color: var(--uc-muted-color) !important;
+  --urlbar-box-hover-bgcolor: var(--uc-highlight-color) !important;
+  --urlbar-box-hover-text-color: var(--uc-inverted-color) !important;
+  --urlbar-box-focus-bgcolor: var(--uc-highlight-color) !important;
+}
+
+.identity-color-blue {
+  --identity-tab-color: var(--uc-identity-color-blue) !important;
+  --identity-icon-color: var(--uc-identity-color-blue) !important;
+}
+.identity-color-turquoise {
+  --identity-tab-color: var(--uc-identity-color-turquoise) !important;
+  --identity-icon-color: var(--uc-identity-color-turquoise) !important;
+}
+.identity-color-green {
+  --identity-tab-color: var(--uc-identity-color-green) !important;
+  --identity-icon-color: var(--uc-identity-color-green) !important;
+}
+.identity-color-yellow {
+  --identity-tab-color: var(--uc-identity-color-yellow) !important;
+  --identity-icon-color: var(--uc-identity-color-yellow) !important;
+}
+.identity-color-orange {
+  --identity-tab-color: var(--uc-identity-color-orange) !important;
+  --identity-icon-color: var(--uc-identity-color-orange) !important;
+}
+.identity-color-red {
+  --identity-tab-color: var(--uc-identity-color-red) !important;
+  --identity-icon-color: var(--uc-identity-color-red) !important;
+}
+.identity-color-pink {
+  --identity-tab-color: var(--uc-identity-color-pink) !important;
+  --identity-icon-color: var(--uc-identity-color-pink) !important;
+}
+.identity-color-purple {
+  --identity-tab-color: var(--uc-identity-color-purple) !important;
+  --identity-icon-color: var(--uc-identity-color-purple) !important;
+}

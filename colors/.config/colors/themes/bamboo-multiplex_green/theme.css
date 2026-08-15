@@ -1,0 +1,38 @@
+/* Theme: bamboo */
+/* Variant: multiplex */
+/* Primary Color: #green */
+
+:root {
+  --color-bg_main: #252623;
+  --color-bg_surface: #383b35;
+  --color-bg_overlay: #3a3d37;
+  --color-bg_selection: #8fb573;
+  --color-fg_main: #f1e9d2;
+  --color-fg_muted: #e2c792;
+  --color-fg_selection: #383b35;
+  --color-accent_primary: #8fb573;
+  --color-accent_secondary: #68aee8;
+  --color-accent_tertiary: #f08080;
+  --color-status_success: #8fb573;
+  --color-status_warning: #ff9966;
+  --color-status_error: #f08080;
+  --color-status_info: #68aee8;
+  --color-border_inactive: #383b35;
+  --color-border_active: #8fb573;
+  --color-color0: #111210;
+  --color-color8: #252623;
+  --color-color1: #f08080;
+  --color-color9: #e75a7c;
+  --color-color2: #40531b;
+  --color-color10: #8fb573;
+  --color-color3: #e2c792;
+  --color-color11: #dbb651;
+  --color-color4: #68aee8;
+  --color-color12: #57a5e5;
+  --color-color5: #aaaaff;
+  --color-color13: #df73ff;
+  --color-color6: #70c2be;
+  --color-color14: #96c7ef;
+  --color-color7: #f1e9d2;
+  --color-color15: #ffffff;
+}

@@ -31,14 +31,13 @@
   background: var(--toolbar-field-background-color) !important;
 }
 
-.urlbarView-row:hover > .urlbarView-row-inner,
-.urlbarView-row[selected] > .urlbarView-row-inner {
-  background: var(--toolbar-field-focus-background-color) !important;
+.urlbarView-row > .urlbarView-row-inner {
+  margin-top: 4px !important;
 }
 
-.urlbar-icon,
-#urlbar-go-button {
-  margin: auto;
+.urlbarView-row:hover,
+.urlbarView-row[selected] {
+  background: var(--uc-overlay-color) !important;
 }
 
 .urlbar-page-action {
@@ -46,5 +45,17 @@
 }
 
 .urlbar-page-action .urlbar-icon {
+  margin-top: 6px !important;
+}
+
+.urlbar .urlbar-background {
+  background: var(--uc-base-color) !important;
+}
+
+.urlbar .urlbar-input-container {
+  background: var(--uc-highlight-color) !important;
+}
+
+.urlbar .urlbar-go-button {
   margin-top: 6px !important;
 }

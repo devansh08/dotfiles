@@ -1,0 +1,38 @@
+-- Theme: evergarden
+-- Variant: winter
+-- Primary Color: #green
+
+return {
+  ["bg_main"] = "#1e2528",
+  ["bg_surface"] = "#262f33",
+  ["bg_overlay"] = "#58686d",
+  ["bg_selection"] = "#cbe3b3",
+  ["fg_main"] = "#f8f9e8",
+  ["fg_muted"] = "#adc9bc",
+  ["fg_selection"] = "#262f33",
+  ["accent_primary"] = "#cbe3b3",
+  ["accent_secondary"] = "#b2caed",
+  ["accent_tertiary"] = "#f7a182",
+  ["status_success"] = "#cbe3b3",
+  ["status_warning"] = "#f7a182",
+  ["status_error"] = "#f57f82",
+  ["status_info"] = "#b2caed",
+  ["border_inactive"] = "#262f33",
+  ["border_active"] = "#cbe3b3",
+  ["color0"] = "#171c1f",
+  ["color8"] = "#1e2528",
+  ["color1"] = "#f57f82",
+  ["color9"] = "#f7a182",
+  ["color2"] = "#cbe3b3",
+  ["color10"] = "#dbe6af",
+  ["color3"] = "#f7a182",
+  ["color11"] = "#f5d098",
+  ["color4"] = "#b2caed",
+  ["color12"] = "#afd9e6",
+  ["color5"] = "#d2bdf3",
+  ["color13"] = "#f3c0e5",
+  ["color6"] = "#b3e6db",
+  ["color14"] = "#afd9e6",
+  ["color7"] = "#fae6ef",
+  ["color15"] = "#f8f9e8"
+}

@@ -16,4 +16,4 @@ configuration {
   display-drun: "Run";
 }
 
-@theme "catppuccin-mocha"
+@theme "theme"

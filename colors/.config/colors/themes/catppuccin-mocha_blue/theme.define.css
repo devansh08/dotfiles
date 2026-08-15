@@ -1,0 +1,35 @@
+/* Theme: catppuccin */
+/* Variant: mocha */
+/* Primary Color: #blue */
+@define-color bg_main #1e1e2e;
+@define-color bg_surface #313244;
+@define-color bg_overlay #9399b2;
+@define-color bg_selection #89b4fa;
+@define-color fg_main #bac2de;
+@define-color fg_muted #a6adc8;
+@define-color fg_selection #181825;
+@define-color accent_primary #89b4fa;
+@define-color accent_secondary #a6e3a1;
+@define-color accent_tertiary #f38ba8;
+@define-color status_success #a6e3a1;
+@define-color status_warning #fab387;
+@define-color status_error #f38ba8;
+@define-color status_info #74c7ec;
+@define-color border_inactive #313244;
+@define-color border_active #89b4fa;
+@define-color color0 #11111b;
+@define-color color8 #1e1e2e;
+@define-color color1 #f38ba8;
+@define-color color9 #eba0ac;
+@define-color color2 #a6e3a1;
+@define-color color10 #94e2d5;
+@define-color color3 #f9e2af;
+@define-color color11 #f2cdcd;
+@define-color color4 #89b4fa;
+@define-color color12 #74c7ec;
+@define-color color5 #cba6f7;
+@define-color color13 #f5c2e7;
+@define-color color6 #74c7ec;
+@define-color color14 #89dceb;
+@define-color color7 #a6adc8;
+@define-color color15 #bac2de;

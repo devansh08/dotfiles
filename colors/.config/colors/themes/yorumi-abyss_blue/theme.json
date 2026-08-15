@@ -1,0 +1,37 @@
+/* Theme: yorumi */
+/* Variant: abyss */
+/* Primary Color: #blue */
+{
+  "bg_main": "#121520",
+  "bg_surface": "#1d202b",
+  "bg_overlay": "#343742",
+  "bg_selection": "#597bc0",
+  "fg_main": "#bdbfcb",
+  "fg_muted": "#a7a9b5",
+  "fg_selection": "#121520",
+  "accent_primary": "#597bc0",
+  "accent_secondary": "#80aa6e",
+  "accent_tertiary": "#f05c60",
+  "status_success": "#80aa6e",
+  "status_warning": "#d29146",
+  "status_error": "#f05c60",
+  "status_info": "#597bc0",
+  "border_inactive": "#1d202b",
+  "border_active": "#597bc0",
+  "color0": "#121210",
+  "color8": "#343742",
+  "color1": "#913b3b",
+  "color9": "#f05c60",
+  "color2": "#667c4b",
+  "color10": "#80aa6e",
+  "color3": "#9d672f",
+  "color11": "#ba9a5e",
+  "color4": "#42778a",
+  "color12": "#597bc0",
+  "color5": "#8d3f5a",
+  "color13": "#b4647f",
+  "color6": "#49837e",
+  "color14": "#7aa8a7",
+  "color7": "#a7a9b5",
+  "color15": "#c6dfec"
+}

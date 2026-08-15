@@ -1,0 +1,35 @@
+/* Theme: yorumi */
+/* Variant: abyss */
+/* Primary Color: #blue */
+@define-color bg_main #121520;
+@define-color bg_surface #1d202b;
+@define-color bg_overlay #343742;
+@define-color bg_selection #597bc0;
+@define-color fg_main #bdbfcb;
+@define-color fg_muted #a7a9b5;
+@define-color fg_selection #121520;
+@define-color accent_primary #597bc0;
+@define-color accent_secondary #80aa6e;
+@define-color accent_tertiary #f05c60;
+@define-color status_success #80aa6e;
+@define-color status_warning #d29146;
+@define-color status_error #f05c60;
+@define-color status_info #597bc0;
+@define-color border_inactive #1d202b;
+@define-color border_active #597bc0;
+@define-color color0 #121210;
+@define-color color8 #343742;
+@define-color color1 #913b3b;
+@define-color color9 #f05c60;
+@define-color color2 #667c4b;
+@define-color color10 #80aa6e;
+@define-color color3 #9d672f;
+@define-color color11 #ba9a5e;
+@define-color color4 #42778a;
+@define-color color12 #597bc0;
+@define-color color5 #8d3f5a;
+@define-color color13 #b4647f;
+@define-color color6 #49837e;
+@define-color color14 #7aa8a7;
+@define-color color7 #a7a9b5;
+@define-color color15 #c6dfec;

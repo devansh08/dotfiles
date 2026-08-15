@@ -1,0 +1,37 @@
+/* Theme: rose-pine */
+/* Variant: main */
+/* Primary Color: #red */
+{
+  "bg_main": "#191724",
+  "bg_surface": "#26233a",
+  "bg_overlay": "#403d52",
+  "bg_selection": "#eb6f92",
+  "fg_main": "#e0def4",
+  "fg_muted": "#908caa",
+  "fg_selection": "#1f1d2e",
+  "accent_primary": "#eb6f92",
+  "accent_secondary": "#31748f",
+  "accent_tertiary": "#95b1ac",
+  "status_success": "#95b1ac",
+  "status_warning": "#f6c177",
+  "status_error": "#eb6f92",
+  "status_info": "#31748f",
+  "border_inactive": "#1f1d2e",
+  "border_active": "#eb6f92",
+  "color0": "#16141f",
+  "color8": "#1f1d2e",
+  "color1": "#eb6f92",
+  "color9": "#ebbcba",
+  "color2": "#95b1ac",
+  "color10": "#9ccfd8",
+  "color3": "#f6c177",
+  "color11": "#f6c177",
+  "color4": "#31748f",
+  "color12": "#9ccfd8",
+  "color5": "#c4a7e7",
+  "color13": "#c4a7e7",
+  "color6": "#9ccfd8",
+  "color14": "#9ccfd8",
+  "color7": "#e0def4",
+  "color15": "#e0def4"
+}

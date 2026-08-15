@@ -1,0 +1,83 @@
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="{{bg_main}}"
+
+# Main text color
+theme[main_fg]="{{fg_main}}"
+
+# Title color for boxes
+theme[title]="{{fg_main}}"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="{{bg_selection}}"
+
+# Background color of selected item in processes box
+theme[selected_bg]="{{bg_surface}}"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="{{fg_main}}"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="{{fg_muted}}"
+
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="{{fg_main}}"
+
+# Background color of the percentage meters
+theme[meter_bg]="{{bg_main}}"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="{{fg_main}}"
+
+# CPU, Memory, Network, Proc box outline colors
+theme[cpu_box]="{{accent_secondary}}"
+theme[mem_box]="{{accent_tertiary}}"
+theme[net_box]="{{bg_overlay}}"
+theme[proc_box]="{{accent_primary}}"
+
+# Box divider line and small boxes line color
+theme[div_line]="{{border_inactive}}"
+
+# Temperature graph color
+theme[temp_start]="{{status_success}}"
+theme[temp_mid]="{{status_warning}}"
+theme[temp_end]="{{status_error}}"
+
+# CPU graph colors
+theme[cpu_start]="{{status_success}}"
+theme[cpu_mid]="{{status_warning}}"
+theme[cpu_end]="{{status_error}}"
+
+# Mem/Disk free meter
+theme[free_start]="{{status_error}}"
+theme[free_mid]="{{status_warning}}"
+theme[free_end]="{{status_success}}"
+
+# Mem/Disk cached meter
+theme[cached_start]="{{status_success}}"
+theme[cached_mid]="{{status_warning}}"
+theme[cached_end]="{{status_error}}"
+
+# Mem/Disk available meter
+theme[available_start]="{{status_success}}"
+theme[available_mid]="{{status_warning}}"
+theme[available_end]="{{status_error}}"
+
+# Mem/Disk used meter
+theme[used_start]="{{status_success}}"
+theme[used_mid]="{{status_warning}}"
+theme[used_end]="{{status_error}}"
+
+# Download graph colors
+theme[download_start]="{{status_success}}"
+theme[download_mid]="{{status_warning}}"
+theme[download_end]="{{status_error}}"
+
+# Upload graph colors
+theme[upload_start]="{{status_success}}"
+theme[upload_mid]="{{status_warning}}"
+theme[upload_end]="{{status_error}}"
+
+# Process box color gradient for threads, mem and cpu usage
+theme[process_start]="{{status_success}}"
+theme[process_mid]="{{status_warning}}"
+theme[process_end]="{{status_error}}"

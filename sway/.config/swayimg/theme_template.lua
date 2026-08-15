@@ -1,0 +1,38 @@
+-- Theme: catppuccin
+-- Variant: mocha
+-- Primary Color: #blue
+
+return {
+  ["bg_main"] = 0xff{{bg_main}},
+  ["bg_surface"] = 0xff{{bg_surface}},
+  ["bg_overlay"] = 0xff{{bg_overlay}},
+  ["bg_selection"] = 0xff{{bg_selection}},
+  ["fg_main"] = 0xff{{fg_main}},
+  ["fg_muted"] = 0xff{{fg_muted}},
+  ["fg_selection"] = 0xff{{fg_selection}},
+  ["accent_primary"] = 0xff{{accent_primary}},
+  ["accent_secondary"] = 0xff{{accent_secondary}},
+  ["accent_tertiary"] = 0xff{{accent_tertiary}},
+  ["status_success"] = 0xff{{status_success}},
+  ["status_warning"] = 0xff{{status_warning}},
+  ["status_error"] = 0xff{{status_error}},
+  ["status_info"] = 0xff{{status_info}},
+  ["border_inactive"] = 0xff{{border_inactive}},
+  ["border_active"] = 0xff{{border_active}},
+  ["color0"] = 0xff{{color0}},
+  ["color8"] = 0xff{{color8}},
+  ["color1"] = 0xff{{color1}},
+  ["color9"] = 0xff{{color9}},
+  ["color2"] = 0xff{{color2}},
+  ["color10"] = 0xff{{color10}},
+  ["color3"] = 0xff{{color3}},
+  ["color11"] = 0xff{{color11}},
+  ["color4"] = 0xff{{color4}},
+  ["color12"] = 0xff{{color12}},
+  ["color5"] = 0xff{{color5}},
+  ["color13"] = 0xff{{color13}},
+  ["color6"] = 0xff{{color6}},
+  ["color14"] = 0xff{{color14}},
+  ["color7"] = 0xff{{color7}},
+  ["color15"] = 0xff{{color15}},
+}

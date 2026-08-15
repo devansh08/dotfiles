@@ -1,0 +1,38 @@
+-- Theme: catppuccin
+-- Variant: mocha
+-- Primary Color: #blue
+
+return {
+  ["bg_main"] = 0xff1d3337,
+  ["bg_surface"] = 0xff254147,
+  ["bg_overlay"] = 0xff2d4f56,
+  ["bg_selection"] = 0xff7aa4a1,
+  ["fg_main"] = 0xffebebeb,
+  ["fg_muted"] = 0xffcbd9d8,
+  ["fg_selection"] = 0xff254147,
+  ["accent_primary"] = 0xff7aa4a1,
+  ["accent_secondary"] = 0xff5a93aa,
+  ["accent_tertiary"] = 0xffe85c51,
+  ["status_success"] = 0xff7aa4a1,
+  ["status_warning"] = 0xffff8349,
+  ["status_error"] = 0xffe85c51,
+  ["status_info"] = 0xff5a93aa,
+  ["border_inactive"] = 0xff254147,
+  ["border_active"] = 0xff7aa4a1,
+  ["color0"] = 0xff282a30,
+  ["color8"] = 0xff4e5157,
+  ["color1"] = 0xffc54e45,
+  ["color9"] = 0xffeb746b,
+  ["color2"] = 0xff688b89,
+  ["color10"] = 0xff8eb2af,
+  ["color3"] = 0xffd78b6c,
+  ["color11"] = 0xfffdb292,
+  ["color4"] = 0xff4d7d90,
+  ["color12"] = 0xff73a3b7,
+  ["color5"] = 0xff934e69,
+  ["color13"] = 0xffb97490,
+  ["color6"] = 0xff89aeb8,
+  ["color14"] = 0xffafd4de,
+  ["color7"] = 0xffc8c8c8,
+  ["color15"] = 0xffeeeeee,
+}

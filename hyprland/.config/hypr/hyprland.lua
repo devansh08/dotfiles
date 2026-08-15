@@ -2,7 +2,7 @@
 -- Split into multiple files for better organization
 -- https://wiki.hypr.land/Configuring/Start/
 
-local theme = require("mocha")
+local theme = require("theme")
 
 -- ========================
 ---- MONITORS ----

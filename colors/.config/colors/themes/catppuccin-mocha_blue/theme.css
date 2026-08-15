@@ -1,0 +1,38 @@
+/* Theme: catppuccin */
+/* Variant: mocha */
+/* Primary Color: #blue */
+
+:root {
+  --color-bg_main: #1e1e2e;
+  --color-bg_surface: #313244;
+  --color-bg_overlay: #9399b2;
+  --color-bg_selection: #89b4fa;
+  --color-fg_main: #bac2de;
+  --color-fg_muted: #a6adc8;
+  --color-fg_selection: #181825;
+  --color-accent_primary: #89b4fa;
+  --color-accent_secondary: #a6e3a1;
+  --color-accent_tertiary: #f38ba8;
+  --color-status_success: #a6e3a1;
+  --color-status_warning: #fab387;
+  --color-status_error: #f38ba8;
+  --color-status_info: #74c7ec;
+  --color-border_inactive: #313244;
+  --color-border_active: #89b4fa;
+  --color-color0: #11111b;
+  --color-color8: #1e1e2e;
+  --color-color1: #f38ba8;
+  --color-color9: #eba0ac;
+  --color-color2: #a6e3a1;
+  --color-color10: #94e2d5;
+  --color-color3: #f9e2af;
+  --color-color11: #f2cdcd;
+  --color-color4: #89b4fa;
+  --color-color12: #74c7ec;
+  --color-color5: #cba6f7;
+  --color-color13: #f5c2e7;
+  --color-color6: #74c7ec;
+  --color-color14: #89dceb;
+  --color-color7: #a6adc8;
+  --color-color15: #bac2de;
+}

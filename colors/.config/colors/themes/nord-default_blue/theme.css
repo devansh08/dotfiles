@@ -1,0 +1,38 @@
+/* Theme: nord */
+/* Variant: default */
+/* Primary Color: #blue */
+
+:root {
+  --color-bg_main: #2e3440;
+  --color-bg_surface: #434c5e;
+  --color-bg_overlay: #616e88;
+  --color-bg_selection: #5e81ac;
+  --color-fg_main: #e5e9f0;
+  --color-fg_muted: #d8dee9;
+  --color-fg_selection: #3b4252;
+  --color-accent_primary: #5e81ac;
+  --color-accent_secondary: #a3be8c;
+  --color-accent_tertiary: #bf616a;
+  --color-status_success: #a3be8c;
+  --color-status_warning: #d08770;
+  --color-status_error: #bf616a;
+  --color-status_info: #5e81ac;
+  --color-border_inactive: #3b4252;
+  --color-border_active: #5e81ac;
+  --color-color0: #2e3440;
+  --color-color8: #434c5e;
+  --color-color1: #bf616a;
+  --color-color9: #bf616a;
+  --color-color2: #a3be8c;
+  --color-color10: #a3be8c;
+  --color-color3: #ebcb8b;
+  --color-color11: #ebcb8b;
+  --color-color4: #5e81ac;
+  --color-color12: #88c0d0;
+  --color-color5: #b48ead;
+  --color-color13: #b48ead;
+  --color-color6: #88c0d0;
+  --color-color14: #8fbcbb;
+  --color-color7: #d8dee9;
+  --color-color15: #eceff4;
+}

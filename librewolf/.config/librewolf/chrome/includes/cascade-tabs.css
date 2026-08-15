@@ -90,10 +90,10 @@
 
   stroke: var(--toolbar-bgcolor) !important;
   /* NOTE: Breaks speaker icon in Firefox v133.0 */
-  background-color: var(--uc-inverted-colour) !important;
+  background-color: var(--uc-inverted-color) !important;
 }
 
-/* change the colours of the speaker icon on active tab to match tab colours */
+/* change the colors of the speaker icon on active tab to match tab colors */
 .tabbrowser-tab[selected]
   .tab-icon-overlay:not([sharing], [crashed]):is(
     [soundplaying],
@@ -102,7 +102,7 @@
   ) {
   stroke: var(--toolbar-bgcolor) !important;
   /* NOTE: Breaks speaker icon in Firefox v133.0 */
-  background-color: var(--uc-inverted-colour) !important;
+  background-color: var(--uc-inverted-color) !important;
 }
 
 .tab-icon-overlay:not([pinned], [sharing], [crashed]):is(
@@ -141,27 +141,27 @@
   fill-opacity: 0.95 !important;
 }
 
-/* speaker icon colour fix */
+/* speaker icon color fix */
 #TabsToolbar .tab-icon-overlay:not([crashed])[soundplaying],
 #TabsToolbar .tab-icon-overlay:not([crashed])[muted],
 #TabsToolbar .tab-icon-overlay:not([crashed])[activemedia-blocked] {
   color: var(--toolbar-color) !important;
 }
 
-/* speaker icon colour fix on hover */
+/* speaker icon color fix on hover */
 #TabsToolbar .tab-icon-overlay:not([crashed])[soundplaying]:hover,
 #TabsToolbar .tab-icon-overlay:not([crashed])[muted]:hover,
 #TabsToolbar .tab-icon-overlay:not([crashed])[activemedia-blocked]:hover {
   color: var(--toolbar-bgcolor) !important;
 }
 
-/* selected tab colour fix*/
+/* selected tab color fix*/
 .tabbrowser-tab[selected] .tab-content {
-  background-color: var(--uc-highlight-colour) !important;
+  background-color: var(--uc-highlight-color) !important;
 }
 
 /* split tabs */
 tab-split-view-wrapper {
-  border: 2px solid var(--uc-identity-colour-blue) !important;
+  border: 2px solid var(--uc-identity-color-blue) !important;
   min-width: calc(var(--uc-min-tab-width) * 2) !important;
 }

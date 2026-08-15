@@ -4,76 +4,76 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* These colours are (mainly) used by the
+    /* These colors are (mainly) used by the
      Container Tabs Plugin */
-    --uc-identity-colour-blue: #7ed6df;
-    --uc-identity-colour-turquoise: #55e6c1;
-    --uc-identity-colour-green: #b8e994;
-    --uc-identity-colour-yellow: #f7d794;
-    --uc-identity-colour-orange: #f19066;
-    --uc-identity-colour-red: #fc5c65;
-    --uc-identity-colour-pink: #f78fb3;
-    --uc-identity-colour-purple: #786fa6;
+    --uc-identity-color-blue: #7ed6df;
+    --uc-identity-color-turquoise: #55e6c1;
+    --uc-identity-color-green: #b8e994;
+    --uc-identity-color-yellow: #f7d794;
+    --uc-identity-color-orange: #f19066;
+    --uc-identity-color-red: #fc5c65;
+    --uc-identity-color-pink: #f78fb3;
+    --uc-identity-color-purple: #786fa6;
 
-    /*  Cascades main Colour Scheme */
-    --uc-base-colour: #1e2021;
-    --uc-highlight-colour: #191b1c;
-    --uc-inverted-colour: #fafafc;
-    --uc-muted-colour: #aaaaac;
-    --uc-accent-colour: var(--uc-identity-colour-purple);
+    /*  Cascades main color Scheme */
+    --uc-base-color: #1e2021;
+    --uc-highlight-color: #191b1c;
+    --uc-inverted-color: #fafafc;
+    --uc-muted-color: #aaaaac;
+    --uc-accent-color: var(--uc-identity-color-purple);
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* These colours are (mainly) used by the
+    /* These colors are (mainly) used by the
      Container Tabs Plugin */
-    --uc-identity-colour-blue: #1d65f5;
-    --uc-identity-colour-turquoise: #209fb5;
-    --uc-identity-colour-green: #40a02b;
-    --uc-identity-colour-yellow: #e49320;
-    --uc-identity-colour-orange: #fe640b;
-    --uc-identity-colour-red: #fc5c65;
-    --uc-identity-colour-pink: #ec83d0;
-    --uc-identity-colour-purple: #822fee;
+    --uc-identity-color-blue: #1d65f5;
+    --uc-identity-color-turquoise: #209fb5;
+    --uc-identity-color-green: #40a02b;
+    --uc-identity-color-yellow: #e49320;
+    --uc-identity-color-orange: #fe640b;
+    --uc-identity-color-red: #fc5c65;
+    --uc-identity-color-pink: #ec83d0;
+    --uc-identity-color-purple: #822fee;
 
-    /*  Cascades main Colour Scheme */
-    --uc-base-colour: #fafafc;
-    --uc-highlight-colour: #dadadc;
-    --uc-inverted-colour: #1e2021;
-    --uc-muted-colour: #191b1c;
-    --uc-accent-colour: var(--uc-identity-colour-purple);
+    /*  Cascades main color Scheme */
+    --uc-base-color: #fafafc;
+    --uc-highlight-color: #dadadc;
+    --uc-inverted-color: #1e2021;
+    --uc-muted-color: #191b1c;
+    --uc-accent-color: var(--uc-identity-color-purple);
   }
 }
 
-/* Down here I'm just reassigning variables based on the colours set above.
+/* Down here I'm just reassigning variables based on the colors set above.
    Feel free to play around with these but there is no editing necessary below this line. c:
    */
 
 :root {
-  --lwt-frame: var(--uc-base-colour) !important;
+  --lwt-frame: var(--uc-base-color) !important;
   --lwt-accent-color: var(--lwt-frame) !important;
-  --lwt-text-color: var(--uc-inverted-colour) !important;
+  --lwt-text-color: var(--uc-inverted-color) !important;
 
-  --toolbar-field-color: var(--uc-inverted-colour) !important;
+  --toolbar-field-color: var(--uc-inverted-color) !important;
 
-  --toolbar-field-focus-color: var(--uc-inverted-colour) !important;
-  --toolbar-field-focus-background-color: var(--uc-highlight-colour) !important;
+  --toolbar-field-focus-color: var(--uc-inverted-color) !important;
+  --toolbar-field-focus-background-color: var(--uc-highlight-color) !important;
   --toolbar-field-focus-border-color: transparent !important;
 
   --toolbar-field-background-color: var(--lwt-frame) !important;
-  --lwt-toolbar-field-highlight: var(--uc-inverted-colour) !important;
-  --lwt-toolbar-field-highlight-text: var(--uc-highlight-colour) !important;
-  --urlbar-popup-url-color: var(--uc-accent-colour) !important;
+  --lwt-toolbar-field-highlight: var(--uc-inverted-color) !important;
+  --lwt-toolbar-field-highlight-text: var(--uc-highlight-color) !important;
+  --urlbar-popup-url-color: var(--uc-accent-color) !important;
 
-  --lwt-tab-text: var(--lwt-text-colour) !important;
+  --lwt-tab-text: var(--lwt-text-color) !important;
 
-  --lwt-selected-tab-background-color: var(--uc-highlight-colour) !important;
+  --lwt-selected-tab-background-color: var(--uc-highlight-color) !important;
 
   --toolbar-bgcolor: var(--lwt-frame) !important;
   --toolbar-color: var(--lwt-text-color) !important;
-  --toolbarseparator-color: var(--uc-accent-colour) !important;
-  --toolbarbutton-hover-background: var(--uc-highlight-colour) !important;
+  --toolbarseparator-color: var(--uc-accent-color) !important;
+  --toolbarbutton-hover-background: var(--uc-highlight-color) !important;
   --toolbarbutton-active-background: var(
     --toolbarbutton-hover-background
   ) !important;
@@ -81,49 +81,49 @@
   --lwt-sidebar-background-color: var(--lwt-frame) !important;
   --sidebar-background-color: var(--lwt-sidebar-background-color) !important;
 
-  --urlbar-box-bgcolor: var(--uc-highlight-colour) !important;
-  --urlbar-box-text-color: var(--uc-muted-colour) !important;
-  --urlbar-box-hover-bgcolor: var(--uc-highlight-colour) !important;
-  --urlbar-box-hover-text-color: var(--uc-inverted-colour) !important;
-  --urlbar-box-focus-bgcolor: var(--uc-highlight-colour) !important;
+  --urlbar-box-bgcolor: var(--uc-highlight-color) !important;
+  --urlbar-box-text-color: var(--uc-muted-color) !important;
+  --urlbar-box-hover-bgcolor: var(--uc-highlight-color) !important;
+  --urlbar-box-hover-text-color: var(--uc-inverted-color) !important;
+  --urlbar-box-focus-bgcolor: var(--uc-highlight-color) !important;
 }
 
 .identity-color-blue {
-  --identity-tab-color: var(--uc-identity-colour-blue) !important;
-  --identity-icon-color: var(--uc-identity-colour-blue) !important;
+  --identity-tab-color: var(--uc-identity-color-blue) !important;
+  --identity-icon-color: var(--uc-identity-color-blue) !important;
 }
 
 .identity-color-turquoise {
-  --identity-tab-color: var(--uc-identity-colour-turquoise) !important;
-  --identity-icon-color: var(--uc-identity-colour-turquoise) !important;
+  --identity-tab-color: var(--uc-identity-color-turquoise) !important;
+  --identity-icon-color: var(--uc-identity-color-turquoise) !important;
 }
 
 .identity-color-green {
-  --identity-tab-color: var(--uc-identity-colour-green) !important;
-  --identity-icon-color: var(--uc-identity-colour-green) !important;
+  --identity-tab-color: var(--uc-identity-color-green) !important;
+  --identity-icon-color: var(--uc-identity-color-green) !important;
 }
 
 .identity-color-yellow {
-  --identity-tab-color: var(--uc-identity-colour-yellow) !important;
-  --identity-icon-color: var(--uc-identity-colour-yellow) !important;
+  --identity-tab-color: var(--uc-identity-color-yellow) !important;
+  --identity-icon-color: var(--uc-identity-color-yellow) !important;
 }
 
 .identity-color-orange {
-  --identity-tab-color: var(--uc-identity-colour-orange) !important;
-  --identity-icon-color: var(--uc-identity-colour-orange) !important;
+  --identity-tab-color: var(--uc-identity-color-orange) !important;
+  --identity-icon-color: var(--uc-identity-color-orange) !important;
 }
 
 .identity-color-red {
-  --identity-tab-color: var(--uc-identity-colour-red) !important;
-  --identity-icon-color: var(--uc-identity-colour-red) !important;
+  --identity-tab-color: var(--uc-identity-color-red) !important;
+  --identity-icon-color: var(--uc-identity-color-red) !important;
 }
 
 .identity-color-pink {
-  --identity-tab-color: var(--uc-identity-colour-pink) !important;
-  --identity-icon-color: var(--uc-identity-colour-pink) !important;
+  --identity-tab-color: var(--uc-identity-color-pink) !important;
+  --identity-icon-color: var(--uc-identity-color-pink) !important;
 }
 
 .identity-color-purple {
-  --identity-tab-color: var(--uc-identity-colour-purple) !important;
-  --identity-icon-color: var(--uc-identity-colour-purple) !important;
+  --identity-tab-color: var(--uc-identity-color-purple) !important;
+  --identity-icon-color: var(--uc-identity-color-purple) !important;
 }

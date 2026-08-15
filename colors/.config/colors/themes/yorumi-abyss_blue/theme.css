@@ -1,0 +1,38 @@
+/* Theme: yorumi */
+/* Variant: abyss */
+/* Primary Color: #blue */
+
+:root {
+  --color-bg_main: #121520;
+  --color-bg_surface: #1d202b;
+  --color-bg_overlay: #343742;
+  --color-bg_selection: #597bc0;
+  --color-fg_main: #bdbfcb;
+  --color-fg_muted: #a7a9b5;
+  --color-fg_selection: #121520;
+  --color-accent_primary: #597bc0;
+  --color-accent_secondary: #80aa6e;
+  --color-accent_tertiary: #f05c60;
+  --color-status_success: #80aa6e;
+  --color-status_warning: #d29146;
+  --color-status_error: #f05c60;
+  --color-status_info: #597bc0;
+  --color-border_inactive: #1d202b;
+  --color-border_active: #597bc0;
+  --color-color0: #121210;
+  --color-color8: #343742;
+  --color-color1: #913b3b;
+  --color-color9: #f05c60;
+  --color-color2: #667c4b;
+  --color-color10: #80aa6e;
+  --color-color3: #9d672f;
+  --color-color11: #ba9a5e;
+  --color-color4: #42778a;
+  --color-color12: #597bc0;
+  --color-color5: #8d3f5a;
+  --color-color13: #b4647f;
+  --color-color6: #49837e;
+  --color-color14: #7aa8a7;
+  --color-color7: #a7a9b5;
+  --color-color15: #c6dfec;
+}

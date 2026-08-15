@@ -1,0 +1,38 @@
+/* Theme: evergarden */
+/* Variant: winter */
+/* Primary Color: #green */
+
+:root {
+  --color-bg_main: #1e2528;
+  --color-bg_surface: #262f33;
+  --color-bg_overlay: #58686d;
+  --color-bg_selection: #cbe3b3;
+  --color-fg_main: #f8f9e8;
+  --color-fg_muted: #adc9bc;
+  --color-fg_selection: #262f33;
+  --color-accent_primary: #cbe3b3;
+  --color-accent_secondary: #b2caed;
+  --color-accent_tertiary: #f7a182;
+  --color-status_success: #cbe3b3;
+  --color-status_warning: #f7a182;
+  --color-status_error: #f57f82;
+  --color-status_info: #b2caed;
+  --color-border_inactive: #262f33;
+  --color-border_active: #cbe3b3;
+  --color-color0: #171c1f;
+  --color-color8: #1e2528;
+  --color-color1: #f57f82;
+  --color-color9: #f7a182;
+  --color-color2: #cbe3b3;
+  --color-color10: #dbe6af;
+  --color-color3: #f7a182;
+  --color-color11: #f5d098;
+  --color-color4: #b2caed;
+  --color-color12: #afd9e6;
+  --color-color5: #d2bdf3;
+  --color-color13: #f3c0e5;
+  --color-color6: #b3e6db;
+  --color-color14: #afd9e6;
+  --color-color7: #fae6ef;
+  --color-color15: #f8f9e8;
+}

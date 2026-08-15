@@ -1,0 +1,38 @@
+/* Theme: nightfox */
+/* Variant: terafox */
+/* Primary Color: #green */
+
+:root {
+  --color-bg_main: #1d3337;
+  --color-bg_surface: #254147;
+  --color-bg_overlay: #2d4f56;
+  --color-bg_selection: #7aa4a1;
+  --color-fg_main: #ebebeb;
+  --color-fg_muted: #cbd9d8;
+  --color-fg_selection: #254147;
+  --color-accent_primary: #7aa4a1;
+  --color-accent_secondary: #5a93aa;
+  --color-accent_tertiary: #e85c51;
+  --color-status_success: #7aa4a1;
+  --color-status_warning: #ff8349;
+  --color-status_error: #e85c51;
+  --color-status_info: #5a93aa;
+  --color-border_inactive: #254147;
+  --color-border_active: #7aa4a1;
+  --color-color0: #282a30;
+  --color-color8: #4e5157;
+  --color-color1: #c54e45;
+  --color-color9: #eb746b;
+  --color-color2: #688b89;
+  --color-color10: #8eb2af;
+  --color-color3: #d78b6c;
+  --color-color11: #fdb292;
+  --color-color4: #4d7d90;
+  --color-color12: #73a3b7;
+  --color-color5: #934e69;
+  --color-color13: #b97490;
+  --color-color6: #89aeb8;
+  --color-color14: #afd4de;
+  --color-color7: #c8c8c8;
+  --color-color15: #eeeeee;
+}

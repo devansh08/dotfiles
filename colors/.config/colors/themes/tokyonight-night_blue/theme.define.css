@@ -1,0 +1,35 @@
+/* Theme: tokyonight */
+/* Variant: night */
+/* Primary Color: #blue */
+@define-color bg_main #1a1b26;
+@define-color bg_surface #1f2231;
+@define-color bg_overlay #545c7e;
+@define-color bg_selection #7aa2f7;
+@define-color fg_main #c0caf5;
+@define-color fg_muted #a9b1d6;
+@define-color fg_selection #1a1b26;
+@define-color accent_primary #7aa2f7;
+@define-color accent_secondary #9ece6a;
+@define-color accent_tertiary #f7768e;
+@define-color status_success #9ece6a;
+@define-color status_warning #ff9e64;
+@define-color status_error #db4b4b;
+@define-color status_info #7aa2f7;
+@define-color border_inactive #737aa2;
+@define-color border_active #7aa2f7;
+@define-color color0 #0c0e14;
+@define-color color8 #1a1b26;
+@define-color color1 #db4b4b;
+@define-color color9 #f7768e;
+@define-color color2 #9ece6a;
+@define-color color10 #9fe044;
+@define-color color3 #e0af68;
+@define-color color11 #faba4a;
+@define-color color4 #7aa2f7;
+@define-color color12 #2ac3de;
+@define-color color5 #bb9af7;
+@define-color color13 #ff007c;
+@define-color color6 #7dcfff;
+@define-color color14 #89ddff;
+@define-color color7 #a9b1d6;
+@define-color color15 #c0caf5;
