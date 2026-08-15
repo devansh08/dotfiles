@@ -8,10 +8,10 @@ echo $gids
 echo $(echo "$gids" | wc -l)
 if [[ $(echo "$gids" | wc -l) -eq 1 && "$gids" != "[]" ]]; then
   if [[ "$dir" == "l" ]]; then
-    hyprctl dispatch changegroupactive b
+    hyprctl dispatch "hl.dsp.group.prev()"
   elif [[ "$dir" == "r" ]]; then
-    hyprctl dispatch changegroupactive f
+    hyprctl dispatch "hl.dsp.group.next()"
   fi
 else
-  hyprctl dispatch movefocus "$dir"
+  hyprctl dispatch "hl.dsp.focus({ direction = '$dir' })"
 fi
