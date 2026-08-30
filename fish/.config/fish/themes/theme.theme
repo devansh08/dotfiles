@@ -20,3 +20,13 @@ fish_pager_color_description cbd9d8
 fish_pager_color_selected_completion ebebeb
 fish_pager_color_selected_description ebebeb
 fish_pager_color_selected_background --background=2d4f56
+
+pure_color_danger e85c51
+pure_color_dark 2d4f56
+pure_color_info 5a93aa
+pure_color_light ebebeb
+pure_color_mute c8c8c8
+pure_color_normal ebebeb
+pure_color_primary 7aa4a1
+pure_color_success 7aa4a1
+pure_color_warning ff8349
