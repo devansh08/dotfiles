@@ -104,7 +104,7 @@
   },
   "mpris": {
     "interval": 1,
-    "player": "cmus",
+    "player": "cliamp",
     "format": " {dynamic}",
     "format-paused": " {dynamic}",
     "max-length": 40,

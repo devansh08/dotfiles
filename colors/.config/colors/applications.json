@@ -4,6 +4,11 @@
     "template": "~/.config/btop/themes/theme_template.theme",
     "template_pattern": "{{[a-z0-9_]+}}"
   },
+  "cliamp": {
+    "file": "~/.config/cliamp/themes/theme.toml",
+    "template": "~/.config/cliamp/themes/theme_template",
+    "template_pattern": "{{[a-z0-9_]+}}"
+  },
   "dunst": {
     "file": "~/.config/dunst/dunstrc",
     "template": "~/.config/dunst/dunstrc_template",

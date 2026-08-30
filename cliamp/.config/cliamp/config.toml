@@ -1,0 +1,6 @@
+theme = "theme"
+
+speed = 1.00
+shuffle = true
+repeat = "Off"
+visualizer = "ClassicPeak"

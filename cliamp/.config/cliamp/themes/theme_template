@@ -1,0 +1,7 @@
+bg = "{{bg_main}}"
+accent = "{{accent_primary}}"
+bright_fg = "{{fg_main}}"
+fg = "{{fg_muted}}"
+green = "{{status_success}}"
+yellow = "{{status_warning}}"
+red = "{{status_error}}"
