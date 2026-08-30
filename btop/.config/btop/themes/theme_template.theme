@@ -29,9 +29,9 @@ theme[meter_bg]="{{bg_main}}"
 theme[proc_misc]="{{fg_main}}"
 
 # CPU, Memory, Network, Proc box outline colors
-theme[cpu_box]="{{accent_secondary}}"
-theme[mem_box]="{{accent_tertiary}}"
-theme[net_box]="{{bg_overlay}}"
+theme[cpu_box]="{{accent_primary}}"
+theme[mem_box]="{{accent_primary}}"
+theme[net_box]="{{accent_primary}}"
 theme[proc_box]="{{accent_primary}}"
 
 # Box divider line and small boxes line color
@@ -58,9 +58,9 @@ theme[cached_mid]="{{status_warning}}"
 theme[cached_end]="{{status_error}}"
 
 # Mem/Disk available meter
-theme[available_start]="{{status_success}}"
+theme[available_start]="{{status_error}}"
 theme[available_mid]="{{status_warning}}"
-theme[available_end]="{{status_error}}"
+theme[available_end]="{{status_success}}"
 
 # Mem/Disk used meter
 theme[used_start]="{{status_success}}"
