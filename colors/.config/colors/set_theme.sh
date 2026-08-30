@@ -161,9 +161,6 @@ log "INFO" "Generating theme files for '$THEME_NAME'..."
 
 # ── Generate JSON ─────────────────────────────────────────────────────────
 {
-    echo "/* Theme: $GEN_THEME */"
-    echo "/* Variant: $VARIANT */"
-    echo "/* Primary Color: #$PRIMARY */"
     echo "{"
     for i in "${!COLOR_NAMES[@]}"; do
         if [[ $i -lt $((${#COLOR_NAMES[@]} - 1)) ]]; then
