@@ -8,6 +8,11 @@ if status --is-interactive
     fish_config theme choose theme
 
     set fish_greeting
+set -gx pure_symbol_git_staged "+"
+set -gx pure_symbol_git_unstaged "!"
+set -gx pure_symbol_git_untracked "?"
+set -gx pure_color_git_dirty $pure_color_primary
+set -gx pure_symbol_git_stash "*"
 
     set -gx EDITOR nvim
     set -gx BROWSER librewolf
