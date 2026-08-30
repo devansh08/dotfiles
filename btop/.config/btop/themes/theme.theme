@@ -17,7 +17,7 @@ theme[selected_bg]="#254147"
 theme[selected_fg]="#ebebeb"
 
 # Color of inactive/disabled text
-theme[inactive_fg]="#cbd9d8"
+theme[inactive_fg]="#c8c8c8"
 
 # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
 theme[graph_text]="#ebebeb"
@@ -29,9 +29,9 @@ theme[meter_bg]="#1d3337"
 theme[proc_misc]="#ebebeb"
 
 # CPU, Memory, Network, Proc box outline colors
-theme[cpu_box]="#5a93aa"
-theme[mem_box]="#e85c51"
-theme[net_box]="#2d4f56"
+theme[cpu_box]="#7aa4a1"
+theme[mem_box]="#7aa4a1"
+theme[net_box]="#7aa4a1"
 theme[proc_box]="#7aa4a1"
 
 # Box divider line and small boxes line color
@@ -58,9 +58,9 @@ theme[cached_mid]="#ff8349"
 theme[cached_end]="#e85c51"
 
 # Mem/Disk available meter
-theme[available_start]="#7aa4a1"
+theme[available_start]="#e85c51"
 theme[available_mid]="#ff8349"
-theme[available_end]="#e85c51"
+theme[available_end]="#7aa4a1"
 
 # Mem/Disk used meter
 theme[used_start]="#7aa4a1"

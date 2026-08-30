@@ -5,7 +5,7 @@
   selected-col: #7aa4a1;
   primary-accent: #7aa4a1;
   fg-col: #ebebeb;
-  fg-muted: #cbd9d8;
+  fg-muted: #c8c8c8;
   width: 600;
 }
 

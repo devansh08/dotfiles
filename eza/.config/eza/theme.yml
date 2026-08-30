@@ -1,53 +1,53 @@
 colourful: true
 
 filekinds:
-  normal: { foreground: "#cbd9d8" }
+  normal: { foreground: "#c8c8c8" }
   directory: { foreground: "#7aa4a1" }
   symlink: { foreground: "#5a93aa" }
-  pipe: { foreground: "#cbd9d8" }
+  pipe: { foreground: "#c8c8c8" }
   block_device: { foreground: "#ff8349" }
   char_device: { foreground: "#ff8349" }
-  socket: { foreground: "#cbd9d8" }
+  socket: { foreground: "#c8c8c8" }
   special: { foreground: "#e85c51" }
   executable: { foreground: "#7aa4a1" }
   mount_point: { foreground: "#5a93aa" }
 
 perms:
-  user_read: { foreground: "#cbd9d8" }
+  user_read: { foreground: "#c8c8c8" }
   user_write: { foreground: "#7aa4a1" }
   user_execute_file: { foreground: "#7aa4a1" }
   user_execute_other: { foreground: "#7aa4a1" }
-  group_read: { foreground: "#cbd9d8" }
+  group_read: { foreground: "#c8c8c8" }
   group_write: { foreground: "#ff8349" }
   group_execute: { foreground: "#7aa4a1" }
-  other_read: { foreground: "#cbd9d8" }
+  other_read: { foreground: "#c8c8c8" }
   other_write: { foreground: "#e85c51" }
   other_execute: { foreground: "#7aa4a1" }
   special_user_file: { foreground: "#e85c51" }
   special_other: { foreground: "#e85c51" }
-  attribute: { foreground: "#cbd9d8" }
+  attribute: { foreground: "#c8c8c8" }
 
 size:
-  major: { foreground: "#cbd9d8" }
+  major: { foreground: "#c8c8c8" }
   minor: { foreground: "#e85c51" }
-  number_byte: { foreground: "#cbd9d8" }
-  number_kilo: { foreground: "#cbd9d8" }
-  number_mega: { foreground: "#cbd9d8" }
+  number_byte: { foreground: "#c8c8c8" }
+  number_kilo: { foreground: "#c8c8c8" }
+  number_mega: { foreground: "#c8c8c8" }
   number_giga: { foreground: "#ff8349" }
   number_huge: { foreground: "#e85c51" }
-  unit_byte: { foreground: "#cbd9d8" }
-  unit_kilo: { foreground: "#cbd9d8" }
-  unit_mega: { foreground: "#cbd9d8" }
+  unit_byte: { foreground: "#c8c8c8" }
+  unit_kilo: { foreground: "#c8c8c8" }
+  unit_mega: { foreground: "#c8c8c8" }
   unit_giga: { foreground: "#ff8349" }
   unit_huge: { foreground: "#e85c51" }
 
 users:
   user_you: { foreground: "#7aa4a1" }
   user_root: { foreground: "#e85c51" }
-  user_other: { foreground: "#cbd9d8" }
+  user_other: { foreground: "#c8c8c8" }
   group_yours: { foreground: "#5a93aa" }
   group_root: { foreground: "#e85c51" }
-  group_other: { foreground: "#cbd9d8" }
+  group_other: { foreground: "#c8c8c8" }
 
 links:
   normal: { foreground: "#5a93aa" }
@@ -59,18 +59,18 @@ git:
   deleted: { foreground: "#e85c51" }
   renamed: { foreground: "#5a93aa" }
   typechange: { foreground: "#ff8349" }
-  ignored: { foreground: "#cbd9d8" }
+  ignored: { foreground: "#c8c8c8" }
   conflicted: { foreground: "#e85c51" }
 
 git_repo:
-  branch_main: { foreground: "#cbd9d8" }
+  branch_main: { foreground: "#c8c8c8" }
   branch_other: { foreground: "#7aa4a1" }
-  git_clean: { foreground: "#cbd9d8" }
+  git_clean: { foreground: "#c8c8c8" }
   git_dirty: { foreground: "#ff8349" }
 
 security_context:
-  colon: { foreground: "#cbd9d8" }
-  user: { foreground: "#cbd9d8" }
+  colon: { foreground: "#c8c8c8" }
+  user: { foreground: "#c8c8c8" }
   role: { foreground: "#7aa4a1" }
   typ: { foreground: "#5a93aa" }
   range: { foreground: "#e85c51" }
@@ -81,18 +81,18 @@ file_type:
   music: { foreground: "#5a93aa" }
   lossless: { foreground: "#5a93aa" }
   crypto: { foreground: "#e85c51" }
-  document: { foreground: "#cbd9d8" }
+  document: { foreground: "#c8c8c8" }
   compressed: { foreground: "#ff8349" }
-  temp: { foreground: "#cbd9d8" }
-  compiled: { foreground: "#cbd9d8" }
+  temp: { foreground: "#c8c8c8" }
+  compiled: { foreground: "#c8c8c8" }
   build: { foreground: "#5a93aa" }
   source: { foreground: "#ebebeb" }
 
-punctuation: { foreground: "#cbd9d8" }
+punctuation: { foreground: "#c8c8c8" }
 date: { foreground: "#ff8349" }
-inode: { foreground: "#cbd9d8" }
-blocks: { foreground: "#cbd9d8" }
-header: { foreground: "#cbd9d8" }
+inode: { foreground: "#c8c8c8" }
+blocks: { foreground: "#c8c8c8" }
+header: { foreground: "#c8c8c8" }
 octal: { foreground: "#ff8349" }
 flags: { foreground: "#7aa4a1" }
 
