@@ -34,6 +34,9 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("rofi -no-show-icons -show run"))
 -- Power menu
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd('rofi -show powermenu -modi "powermenu:~/.bin/rofi-power-menu"'))
 
+-- Color picker
+hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("hyprpicker --autocopy --format=hex"))
+
 -- Clipboard picker
 hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd('rofi -show clipboard -modi "clipboard:~/.bin/rofi-cliphist"'))
 
