@@ -19,8 +19,11 @@ hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("kitty"))
 -- Floating kitty
 hl.bind(mainMod .. " + SHIFT + RETURN", hl.dsp.exec_cmd("[float on; size 1920 1080; center on] kitty"))
 
--- File manager (hypr-yazi)
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("~/.bin/hypr-yazi"))
+-- File manager (yazi)
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("~/.bin/hypr-float 'yazi' 'kitty -- yazi'"))
+
+-- Music player (cliamp)
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("~/.bin/hypr-float 'cliamp' 'kitty -- cliamp'"))
 
 -- Launcher - rofi drun
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("rofi -show drun"))

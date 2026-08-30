@@ -1,0 +1,10 @@
+#!/bin/bash
+
+NAME="$1"
+CMD="$2"
+
+if hyprctl clients -j | jq -e ".[] | select(.workspace.name == \"special:${NAME}\")" >/dev/null; then
+  hyprctl dispatch "hl.dsp.workspace.toggle_special(\"${NAME}\")"
+else
+  hyprctl dispatch "hl.dsp.exec_cmd(\"${CMD}\", { workspace = \"special:${NAME}\", float = true, size = { 1920, 1080 }, center = true })"
+fi
