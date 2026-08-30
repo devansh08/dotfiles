@@ -2,4 +2,5 @@ completions/
 conf.d/
 functions/tide/
 functions/_*
+!functions/_pure_*
 fish_variables*
