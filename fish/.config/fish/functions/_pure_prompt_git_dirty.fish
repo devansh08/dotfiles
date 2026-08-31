@@ -38,5 +38,7 @@ function _pure_prompt_git_dirty
     if test -n "$result"
         set --local git_dirty_color (_pure_set_color $pure_color_git_dirty)
         echo "$git_dirty_color$result"
+    else
+        echo ""
     end
 end
