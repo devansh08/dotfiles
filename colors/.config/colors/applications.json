@@ -9,6 +9,10 @@
     "template": "~/.config/cliamp/themes/theme_template",
     "template_pattern": "{{[a-z0-9_]+}}"
   },
+  "darkReader": {
+    "dir": "~/.config/librewolf/librewolf/vtn67fq1.default-default",
+    "cmd": "python3 ~/.config/colors/update-dark-reader-colors.py"
+  },
   "dunst": {
     "file": "~/.config/dunst/dunstrc",
     "template": "~/.config/dunst/dunstrc_template",
@@ -25,6 +29,10 @@
     "template_pattern": "{{[a-z0-9_]+}}",
     "skip_hash": true
   },
+  "gamer": {
+    "dir": "~/Projects/Gamer",
+    "cmd": "~/Projects/Gamer/build.sh > /dev/null"
+  },
   "hyprland": {
     "file": "~/.config/hypr/theme.lua",
     "theme_file": "theme.lua"
@@ -34,6 +42,10 @@
     "template": "~/.config/hypr/hyprlock_template.conf",
     "template_pattern": "{{[a-z0-9_]+}}",
     "skip_hash": true
+  },
+  "justa": {
+    "file": "~/.config/justa/theme.json",
+    "theme_file": "theme.json"
   },
   "kitty": {
     "file": "~/.config/kitty/theme.conf",
@@ -45,6 +57,12 @@
     "template": "~/.config/librewolf/chrome/includes/cascade-template.css",
     "template_pattern": "'[a-z0-9_]+'"
   },
+  "localsend": {
+    "dir": "~/.local/share/org.localsend.localsend_app",
+    "cmd": "jq -c --arg color \"{{accent_primary}}\" '.[\"flutter.ls_custom_color\"] = $color' shared_preferences.json > tmp && mv tmp shared_preferences.json",
+    "cmd_template_pattern": "{{[a-z0-9_]+}}",
+    "skip_hash": true
+  },
   "nvim": {
     "file": "~/.config/nvim/lua/colors.lua",
     "theme_file": "theme.lua"
@@ -53,6 +71,11 @@
     "file": "~/.pi/agent/themes/theme.json",
     "template": "~/.pi/agent/themes/template",
     "template_pattern": "{{[a-z0-9_]+}}"
+  },
+  "refind": {
+    "dir": "/boot/efi/EFI/refind/themes/assets",
+    "cmd": "~/.config/colors/update-refind-icons.sh '{{accent_primary}}' '{{fg_main}}' '{{bg_main}}' '{{status_error}}'",
+    "cmd_template_pattern": "{{[a-z0-9_]+}}"
   },
   "rofi": {
     "file": "~/.config/rofi/theme.rasi",
@@ -64,6 +87,11 @@
     "template": "~/.config/swayimg/theme_template.lua",
     "template_pattern": "{{[a-z0-9_]+}}",
     "skip_hash": true
+  },
+  "vt": {
+    "file": "~/.config/vt/theme.vt",
+    "template": "~/.config/vt/template.vt",
+    "template_pattern": "{{[a-z0-9_]+}}"
   },
   "waybar": {
     "file": "~/.config/waybar/theme.css",
