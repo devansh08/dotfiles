@@ -38,7 +38,7 @@ swayimg.text.status_timeout = 3
 swayimg.viewer.on_key("Return", function()
   swayimg.mode = "gallery"
 end)
-swayimg.viewer.on_key("Left", function()
+swayimg.viewer.on_key("Ctrl+Left", function()
   fileIndex = (fileIndex - 1) % #files
   if fileIndex == 0 then
     fileIndex = #files
@@ -47,7 +47,7 @@ swayimg.viewer.on_key("Left", function()
   swayimg.viewer.open("prev")
   swayimg.viewer.set_text("topright", { fileIndex .. " / " .. #files, "{frame.index} / {frame.total}" })
 end)
-swayimg.viewer.on_key("Right", function()
+swayimg.viewer.on_key("Ctrl+Right", function()
   fileIndex = (fileIndex + 1) % #files
   if fileIndex == 0 then
     fileIndex = #files
