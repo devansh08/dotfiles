@@ -1,0 +1,52 @@
+[display]
+show_time = true
+greeting = "Hello HyprMage, Welcome to ArchLand!"
+align_greeting = "center"
+issue = false
+
+[layout]
+width = 60
+window_padding = 2
+container_padding = 1
+prompt_padding = 1
+
+[layout.widgets]
+time_position = "top"
+status_position = "bottom"
+
+[session]
+sessions_dirs = ["/usr/share/wayland-sessions"]
+
+[remember]
+username = true
+session = true
+user_session = false
+
+[user_menu]
+enabled = false
+
+[secret]
+mode = "characters"
+characters = "*"
+
+[keybindings]
+command = 2
+power = 12
+
+[background]
+kind = "none"
+
+[power]
+use_setsid = false
+
+[theme]
+border = "white"
+text = "green"
+time = "blue"
+container = "black"
+title = "cyan"
+greet = "yellow"
+prompt = "magenta"
+input = "white"
+action = "bright-blue"
+button = "red"
