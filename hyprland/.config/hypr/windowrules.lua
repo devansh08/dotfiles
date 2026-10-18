@@ -32,6 +32,15 @@ hl.window_rule({
     center = true,
 })
 
+-- Just a Calendar
+hl.window_rule({
+    name  = "justacalendar-float",
+    match = { title = "^JustACalendar$" },
+    float = true,
+    size  = { 854, 480 },
+    center = true,
+})
+
 -- Raylib games - 1600x900
 hl.window_rule({
     name  = "go-raylib-1600-900",
