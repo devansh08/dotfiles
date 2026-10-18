@@ -23,3 +23,4 @@
 - Select the colors for the 16 semantic and 16 terminal colors
 - Save the output from the webpage into the `output` file
 - Run `./set_theme.sh` and select the new colorscheme to generate all the files and symlink the files into `~/.active_theme/`
+- Run `node index.js` in `wallpaper-code` to generate a HTML page (`output.html`) that will preview the wallpapers closest matching the color theme
