@@ -38,8 +38,6 @@
     },
     "modules": [
       "clock",
-      "cpu",
-      "memory",
       "disk",
       "clock#day",
     ],
@@ -90,14 +88,12 @@
     "max-length": 40,
     "dynamic-order": [
       "title",
-      "artist",
     ],
     "dynamic-importance-order": [
       "title",
-      "artist",
     ],
     "tooltip": true,
-    "tooltip-format": "{title} - {artist}"
+    "tooltip-format": "{title}"
   },
   "network": {
     "format-wifi": "󰖩 {essid}",
