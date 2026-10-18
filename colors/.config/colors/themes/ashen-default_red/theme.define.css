@@ -1,0 +1,35 @@
+/* Theme: ashen */
+/* Variant: default */
+/* Primary Color: #red */
+@define-color bg_main #121212;
+@define-color bg_surface #1d1d1d;
+@define-color bg_overlay #323232;
+@define-color bg_selection #bd4c4c;
+@define-color fg_main #d5d5d5;
+@define-color fg_muted #a7a7a7;
+@define-color fg_selection #121212;
+@define-color accent_primary #bd4c4c;
+@define-color accent_secondary #4a8b8b;
+@define-color accent_tertiary #1e6f54;
+@define-color status_success #1e6f54;
+@define-color status_warning #d87c4a;
+@define-color status_error #bd4c4c;
+@define-color status_info #4a8b8b;
+@define-color border_inactive #1d1d1d;
+@define-color border_active #bd4c4c;
+@define-color color0 #121212;
+@define-color color8 #1d1d1d;
+@define-color color1 #bd4c4c;
+@define-color color9 #c53030;
+@define-color color2 #629c7d;
+@define-color color10 #1e6f54;
+@define-color color3 #e49a44;
+@define-color color11 #e5a72a;
+@define-color color4 #3a6e6e;
+@define-color color12 #4a8b8b;
+@define-color color5 #bd4c4c;
+@define-color color13 #c53030;
+@define-color color6 #3a6e6e;
+@define-color color14 #4a8b8b;
+@define-color color7 #a7a7a7;
+@define-color color15 #d5d5d5;

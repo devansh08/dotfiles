@@ -1,0 +1,38 @@
+-- Theme: oasis
+-- Variant: cactus
+-- Primary Color: #green
+
+return {
+  ["bg_main"] = "#151e17",
+  ["bg_surface"] = "#212c22",
+  ["bg_overlay"] = "#2f3d33",
+  ["bg_selection"] = "#5a9c5d",
+  ["fg_main"] = "#fffff0",
+  ["fg_muted"] = "#f5f5dc",
+  ["fg_selection"] = "#2f3d33",
+  ["accent_primary"] = "#5a9c5d",
+  ["accent_secondary"] = "#81c0ff",
+  ["accent_tertiary"] = "#ff7979",
+  ["status_success"] = "#5a9c5d",
+  ["status_warning"] = "#ffa34d",
+  ["status_error"] = "#ff7979",
+  ["status_info"] = "#81c0ff",
+  ["border_inactive"] = "#111813",
+  ["border_active"] = "#5a9c5d",
+  ["color0"] = "#0f1511",
+  ["color8"] = "#151e17",
+  ["color1"] = "#ff7979",
+  ["color9"] = "#ffa0a0",
+  ["color2"] = "#5a9c5d",
+  ["color10"] = "#a3e39a",
+  ["color3"] = "#bdb76b",
+  ["color11"] = "#f0e68c",
+  ["color4"] = "#335668",
+  ["color12"] = "#81c0ff",
+  ["color5"] = "#653f73",
+  ["color13"] = "#d2adff",
+  ["color6"] = "#3d6980",
+  ["color14"] = "#87ceeb",
+  ["color7"] = "#f5f5dc",
+  ["color15"] = "#fffff0"
+}

@@ -1,0 +1,38 @@
+/* Theme: thorn */
+/* Variant: forest */
+/* Primary Color: #green */
+
+:root {
+  --color-bg_main: #131f20;
+  --color-bg_surface: #223331;
+  --color-bg_overlay: #26403e;
+  --color-bg_selection: #568270;
+  --color-fg_main: #dbd2c7;
+  --color-fg_muted: #9b9a8c;
+  --color-fg_selection: #223331;
+  --color-accent_primary: #568270;
+  --color-accent_secondary: #91c4c0;
+  --color-accent_tertiary: #d2696c;
+  --color-status_success: #568270;
+  --color-status_warning: #ffd7aa;
+  --color-status_error: #d2696c;
+  --color-status_info: #91c4c0;
+  --color-border_inactive: #223331;
+  --color-border_active: #568270;
+  --color-color0: #0b1213;
+  --color-color8: #1e2d39;
+  --color-color1: #d8464b;
+  --color-color9: #d2696c;
+  --color-color2: #568270;
+  --color-color10: #94c68b;
+  --color-color3: #ffd7aa;
+  --color-color11: #f2a597;
+  --color-color4: #6daae3;
+  --color-color12: #91c4c0;
+  --color-color5: #d8464b;
+  --color-color13: #d2696c;
+  --color-color6: #91c4c0;
+  --color-color14: #6daae3;
+  --color-color7: #9b9a8c;
+  --color-color15: #dbd2c7;
+}

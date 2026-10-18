@@ -1,0 +1,35 @@
+/* Theme: osaka-jade */
+/* Variant: default */
+/* Primary Color: #green */
+@define-color bg_main #111c18;
+@define-color bg_surface #1a2520;
+@define-color bg_overlay #2a3530;
+@define-color bg_selection #549e6a;
+@define-color fg_main #f6f5dd;
+@define-color fg_muted #c1c497;
+@define-color fg_selection #1a2520;
+@define-color accent_primary #549e6a;
+@define-color accent_secondary #509475;
+@define-color accent_tertiary #ff5345;
+@define-color status_success #549e6a;
+@define-color status_warning #e5c736;
+@define-color status_error #ff5345;
+@define-color status_info #509475;
+@define-color border_inactive #2a3530;
+@define-color border_active #549e6a;
+@define-color color0 #23372b;
+@define-color color8 #53685b;
+@define-color color1 #ff5345;
+@define-color color9 #db9f9c;
+@define-color color2 #549e6a;
+@define-color color10 #63b07a;
+@define-color color3 #d7c995;
+@define-color color11 #e5c736;
+@define-color color4 #509475;
+@define-color color12 #acd4cf;
+@define-color color5 #d2689c;
+@define-color color13 #db9f9c;
+@define-color color6 #2dd5b7;
+@define-color color14 #8cd3cb;
+@define-color color7 #f6f5dd;
+@define-color color15 #9eebb3;

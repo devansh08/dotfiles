@@ -1,0 +1,35 @@
+/* Theme: onedark */
+/* Variant: cool */
+/* Primary Color: #blue */
+@define-color bg_main #2d3343;
+@define-color bg_surface #343e4f;
+@define-color bg_overlay #363c51;
+@define-color bg_selection #6db9f7;
+@define-color fg_main #a5b0c5;
+@define-color fg_muted #7d899f;
+@define-color fg_selection #2d3343;
+@define-color accent_primary #5ab0f6;
+@define-color accent_secondary #97ca72;
+@define-color accent_tertiary #ef5f6b;
+@define-color status_success #97ca72;
+@define-color status_warning #d99a5e;
+@define-color status_error #ef5f6b;
+@define-color status_info #5ab0f6;
+@define-color border_inactive #1e242e;
+@define-color border_active #6db9f7;
+@define-color color0 #151820;
+@define-color color8 #1e242e;
+@define-color color1 #a13131;
+@define-color color9 #ef5f6b;
+@define-color color2 #303d27;
+@define-color color10 #97ca72;
+@define-color color3 #ebc275;
+@define-color color11 #f0d197;
+@define-color color4 #5ab0f6;
+@define-color color12 #6db9f7;
+@define-color color5 #8f36a9;
+@define-color color13 #ca72e4;
+@define-color color6 #25747d;
+@define-color color14 #4dbdcb;
+@define-color color7 #7d899f;
+@define-color color15 #a5b0c5;

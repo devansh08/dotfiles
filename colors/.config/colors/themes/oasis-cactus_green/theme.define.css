@@ -1,0 +1,35 @@
+/* Theme: oasis */
+/* Variant: cactus */
+/* Primary Color: #green */
+@define-color bg_main #151e17;
+@define-color bg_surface #212c22;
+@define-color bg_overlay #2f3d33;
+@define-color bg_selection #5a9c5d;
+@define-color fg_main #fffff0;
+@define-color fg_muted #f5f5dc;
+@define-color fg_selection #2f3d33;
+@define-color accent_primary #5a9c5d;
+@define-color accent_secondary #81c0ff;
+@define-color accent_tertiary #ff7979;
+@define-color status_success #5a9c5d;
+@define-color status_warning #ffa34d;
+@define-color status_error #ff7979;
+@define-color status_info #81c0ff;
+@define-color border_inactive #111813;
+@define-color border_active #5a9c5d;
+@define-color color0 #0f1511;
+@define-color color8 #151e17;
+@define-color color1 #ff7979;
+@define-color color9 #ffa0a0;
+@define-color color2 #5a9c5d;
+@define-color color10 #a3e39a;
+@define-color color3 #bdb76b;
+@define-color color11 #f0e68c;
+@define-color color4 #335668;
+@define-color color12 #81c0ff;
+@define-color color5 #653f73;
+@define-color color13 #d2adff;
+@define-color color6 #3d6980;
+@define-color color14 #87ceeb;
+@define-color color7 #f5f5dc;
+@define-color color15 #fffff0;

@@ -1,0 +1,38 @@
+/* Theme: solarized-osaka */
+/* Variant: default */
+/* Primary Color: #blue */
+
+:root {
+  --color-bg_main: #00141a;
+  --color-bg_surface: #002d38;
+  --color-bg_overlay: #073541;
+  --color-bg_selection: #2078b6;
+  --color-fg_main: #839495;
+  --color-fg_muted: #586e74;
+  --color-fg_selection: #002d38;
+  --color-accent_primary: #2078b6;
+  --color-accent_secondary: #6e8000;
+  --color-accent_tertiary: #b84514;
+  --color-status_success: #6e8000;
+  --color-status_warning: #b84514;
+  --color-status_error: #cd2623;
+  --color-status_info: #2078b6;
+  --color-border_inactive: #073541;
+  --color-border_active: #2078b6;
+  --color-color0: #00141a;
+  --color-color8: #002d38;
+  --color-color1: #57100f;
+  --color-color9: #cd2623;
+  --color-color2: #2c3300;
+  --color-color10: #6e8000;
+  --color-color3: #332700;
+  --color-color11: #8f6b00;
+  --color-color4: #103956;
+  --color-color12: #2078b6;
+  --color-color5: #541232;
+  --color-color13: #c52b75;
+  --color-color6: #103a3c;
+  --color-color14: #238682;
+  --color-color7: #586e74;
+  --color-color15: #fdf6e2;
+}

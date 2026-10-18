@@ -1,0 +1,38 @@
+/* Theme: nightowl */
+/* Variant: default */
+/* Primary Color: #blue */
+
+:root {
+  --color-bg_main: #0e293f;
+  --color-bg_surface: #1d3b53;
+  --color-bg_overlay: #063e5d;
+  --color-bg_selection: #82aaff;
+  --color-fg_main: #ffffff;
+  --color-fg_muted: #cccccc;
+  --color-fg_selection: #0e293f;
+  --color-accent_primary: #82aaff;
+  --color-accent_secondary: #c5e478;
+  --color-accent_tertiary: #ff869a;
+  --color-status_success: #c5e478;
+  --color-status_warning: #f78c6c;
+  --color-status_error: #ff869a;
+  --color-status_info: #82aaff;
+  --color-border_inactive: #1d3b53;
+  --color-border_active: #82aaff;
+  --color-color0: #010d18;
+  --color-color8: #021320;
+  --color-color1: #ff5874;
+  --color-color9: #ff869a;
+  --color-color2: #6cc85e;
+  --color-color10: #c5e478;
+  --color-color3: #ffd602;
+  --color-color11: #fad430;
+  --color-color4: #82aaff;
+  --color-color12: #169fff;
+  --color-color5: #f6bbe5;
+  --color-color13: #ff2c83;
+  --color-color6: #7fdbca;
+  --color-color14: #6ae9f0;
+  --color-color7: #d6deeb;
+  --color-color15: #ffffff;
+}

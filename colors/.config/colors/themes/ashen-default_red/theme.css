@@ -1,0 +1,38 @@
+/* Theme: ashen */
+/* Variant: default */
+/* Primary Color: #red */
+
+:root {
+  --color-bg_main: #121212;
+  --color-bg_surface: #1d1d1d;
+  --color-bg_overlay: #323232;
+  --color-bg_selection: #bd4c4c;
+  --color-fg_main: #d5d5d5;
+  --color-fg_muted: #a7a7a7;
+  --color-fg_selection: #121212;
+  --color-accent_primary: #bd4c4c;
+  --color-accent_secondary: #4a8b8b;
+  --color-accent_tertiary: #1e6f54;
+  --color-status_success: #1e6f54;
+  --color-status_warning: #d87c4a;
+  --color-status_error: #bd4c4c;
+  --color-status_info: #4a8b8b;
+  --color-border_inactive: #1d1d1d;
+  --color-border_active: #bd4c4c;
+  --color-color0: #121212;
+  --color-color8: #1d1d1d;
+  --color-color1: #bd4c4c;
+  --color-color9: #c53030;
+  --color-color2: #629c7d;
+  --color-color10: #1e6f54;
+  --color-color3: #e49a44;
+  --color-color11: #e5a72a;
+  --color-color4: #3a6e6e;
+  --color-color12: #4a8b8b;
+  --color-color5: #bd4c4c;
+  --color-color13: #c53030;
+  --color-color6: #3a6e6e;
+  --color-color14: #4a8b8b;
+  --color-color7: #a7a7a7;
+  --color-color15: #d5d5d5;
+}

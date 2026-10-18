@@ -1,0 +1,38 @@
+/* Theme: osaka-jade */
+/* Variant: default */
+/* Primary Color: #green */
+
+:root {
+  --color-bg_main: #111c18;
+  --color-bg_surface: #1a2520;
+  --color-bg_overlay: #2a3530;
+  --color-bg_selection: #549e6a;
+  --color-fg_main: #f6f5dd;
+  --color-fg_muted: #c1c497;
+  --color-fg_selection: #1a2520;
+  --color-accent_primary: #549e6a;
+  --color-accent_secondary: #509475;
+  --color-accent_tertiary: #ff5345;
+  --color-status_success: #549e6a;
+  --color-status_warning: #e5c736;
+  --color-status_error: #ff5345;
+  --color-status_info: #509475;
+  --color-border_inactive: #2a3530;
+  --color-border_active: #549e6a;
+  --color-color0: #23372b;
+  --color-color8: #53685b;
+  --color-color1: #ff5345;
+  --color-color9: #db9f9c;
+  --color-color2: #549e6a;
+  --color-color10: #63b07a;
+  --color-color3: #d7c995;
+  --color-color11: #e5c736;
+  --color-color4: #509475;
+  --color-color12: #acd4cf;
+  --color-color5: #d2689c;
+  --color-color13: #db9f9c;
+  --color-color6: #2dd5b7;
+  --color-color14: #8cd3cb;
+  --color-color7: #f6f5dd;
+  --color-color15: #9eebb3;
+}

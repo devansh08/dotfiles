@@ -1,0 +1,38 @@
+/* Theme: cendre */
+/* Variant: medium */
+/* Primary Color: #red */
+
+:root {
+  --color-bg_main: #26211f;
+  --color-bg_surface: #3d3633;
+  --color-bg_overlay: #625753;
+  --color-bg_selection: #ea9875;
+  --color-fg_main: #e6d5c2;
+  --color-fg_muted: #a09384;
+  --color-fg_selection: #26211f;
+  --color-accent_primary: #ea9875;
+  --color-accent_secondary: #4e89a2;
+  --color-accent_tertiary: #99af6b;
+  --color-status_success: #99af6b;
+  --color-status_warning: #ea9875;
+  --color-status_error: #d1766e;
+  --color-status_info: #4e89a2;
+  --color-border_inactive: #4e4641;
+  --color-border_active: #ea9875;
+  --color-color0: #1d1917;
+  --color-color8: #141110;
+  --color-color1: #d1766e;
+  --color-color9: #d25780;
+  --color-color2: #262c1b;
+  --color-color10: #43b16a;
+  --color-color3: #fcba81;
+  --color-color11: #f4a21c;
+  --color-color4: #4e89a2;
+  --color-color12: #58bdff;
+  --color-color5: #9480ba;
+  --color-color13: #a692cd;
+  --color-color6: #4e89a2;
+  --color-color14: #20c9cb;
+  --color-color7: #a09384;
+  --color-color15: #e6d5c2;
+}

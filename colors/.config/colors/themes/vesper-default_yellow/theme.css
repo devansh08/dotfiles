@@ -1,0 +1,38 @@
+/* Theme: vesper */
+/* Variant: default */
+/* Primary Color: #yellow */
+
+:root {
+  --color-bg_main: #101010;
+  --color-bg_surface: #161616;
+  --color-bg_overlay: #232323;
+  --color-bg_selection: #ffc799;
+  --color-fg_main: #fefefe;
+  --color-fg_muted: #a0a0a0;
+  --color-fg_selection: #101010;
+  --color-accent_primary: #ffc799;
+  --color-accent_secondary: #82d9c2;
+  --color-accent_tertiary: #ff8080;
+  --color-status_success: #82d9c2;
+  --color-status_warning: #ffc799;
+  --color-status_error: #ff8080;
+  --color-status_info: #99ffe4;
+  --color-border_inactive: #161616;
+  --color-border_active: #ffc799;
+  --color-color0: #101010;
+  --color-color8: #343434;
+  --color-color1: #ff8080;
+  --color-color9: #ff8080;
+  --color-color2: #82d9c2;
+  --color-color10: #99ffe4;
+  --color-color3: #ffc799;
+  --color-color11: #ffcfa8;
+  --color-color4: #99ffe4;
+  --color-color12: #99ffe4;
+  --color-color5: #ff8080;
+  --color-color13: #ff8080;
+  --color-color6: #99ffe4;
+  --color-color14: #99ffe4;
+  --color-color7: #fefefe;
+  --color-color15: #ffffff;
+}

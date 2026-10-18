@@ -1,0 +1,38 @@
+/* Theme: oasis */
+/* Variant: cactus */
+/* Primary Color: #green */
+
+:root {
+  --color-bg_main: #151e17;
+  --color-bg_surface: #212c22;
+  --color-bg_overlay: #2f3d33;
+  --color-bg_selection: #5a9c5d;
+  --color-fg_main: #fffff0;
+  --color-fg_muted: #f5f5dc;
+  --color-fg_selection: #2f3d33;
+  --color-accent_primary: #5a9c5d;
+  --color-accent_secondary: #81c0ff;
+  --color-accent_tertiary: #ff7979;
+  --color-status_success: #5a9c5d;
+  --color-status_warning: #ffa34d;
+  --color-status_error: #ff7979;
+  --color-status_info: #81c0ff;
+  --color-border_inactive: #111813;
+  --color-border_active: #5a9c5d;
+  --color-color0: #0f1511;
+  --color-color8: #151e17;
+  --color-color1: #ff7979;
+  --color-color9: #ffa0a0;
+  --color-color2: #5a9c5d;
+  --color-color10: #a3e39a;
+  --color-color3: #bdb76b;
+  --color-color11: #f0e68c;
+  --color-color4: #335668;
+  --color-color12: #81c0ff;
+  --color-color5: #653f73;
+  --color-color13: #d2adff;
+  --color-color6: #3d6980;
+  --color-color14: #87ceeb;
+  --color-color7: #f5f5dc;
+  --color-color15: #fffff0;
+}

@@ -1,0 +1,35 @@
+/* Theme: oasis */
+/* Variant: lagoon */
+/* Primary Color: #blue */
+@define-color bg_main #101825;
+@define-color bg_surface #1a283f;
+@define-color bg_overlay #22385c;
+@define-color bg_selection #448fda;
+@define-color fg_main #fffff0;
+@define-color fg_muted #727f86;
+@define-color fg_selection #1a283f;
+@define-color accent_primary #448fda;
+@define-color accent_secondary #7fcf78;
+@define-color accent_tertiary #ff7979;
+@define-color status_success #7fcf78;
+@define-color status_warning #f9a05e;
+@define-color status_error #ff7979;
+@define-color status_info #448fda;
+@define-color border_inactive #101825;
+@define-color border_active #448fda;
+@define-color color0 #0b1119;
+@define-color color8 #101825;
+@define-color color1 #ff7979;
+@define-color color9 #ffa0a0;
+@define-color color2 #345a2b;
+@define-color color10 #7fcf78;
+@define-color color3 #ffa34d;
+@define-color color11 #ffba75;
+@define-color color4 #1670ad;
+@define-color color12 #47a3ff;
+@define-color color5 #653f73;
+@define-color color13 #c695ff;
+@define-color color6 #47a3ff;
+@define-color color14 #93c8ff;
+@define-color color7 #f5f5dc;
+@define-color color15 #fffff0;
