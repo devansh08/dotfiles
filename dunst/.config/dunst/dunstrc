@@ -33,8 +33,8 @@
     horizontal_padding = 8
     text_icon_padding = 0
 
-    frame_color = "#7aa4a1"
-    highlight = "#5a93aa"
+    frame_color = "#568270"
+    highlight = "#91c4c0"
     separator_color = frame
 
     sort = urgency_descending 
@@ -112,22 +112,22 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#1d3337"
-    foreground = "#ebebeb"
+    background = "#131f20"
+    foreground = "#dbd2c7"
     timeout = 10
     default_icon = /usr/share/icons/Papirus-Dark/32x32/status/dialog-warning.svg
 
 [urgency_normal]
-    background = "#1d3337"
-    foreground = "#ebebeb"
+    background = "#131f20"
+    foreground = "#dbd2c7"
     timeout = 10
     override_pause_level = 30
     default_icon = /usr/share/icons/Papirus-Dark/32x32/status/dialog-information.svg
 
 [urgency_critical]
-    background = "#1d3337"
-    foreground = "#ebebeb"
-    frame_color = "#e85c51"
+    background = "#131f20"
+    foreground = "#dbd2c7"
+    frame_color = "#d2696c"
     timeout = 0
     override_pause_level = 60
     default_icon = /usr/share/icons/Papirus-Dark/32x32/status/dialog-error.svg

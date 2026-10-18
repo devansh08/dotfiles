@@ -5,22 +5,22 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Container Tabs colors */
-    --uc-identity-color-blue: #4d7d90;
-    --uc-identity-color-turquoise: #73a3b7;
-    --uc-identity-color-green: #688b89;
-    --uc-identity-color-yellow: #fdb292;
-    --uc-identity-color-orange: #d78b6c;
-    --uc-identity-color-red: #c54e45;
-    --uc-identity-color-pink: #eb746b;
-    --uc-identity-color-purple: #934e69;
+    --uc-identity-color-blue: #6daae3;
+    --uc-identity-color-turquoise: #91c4c0;
+    --uc-identity-color-green: #568270;
+    --uc-identity-color-yellow: #f2a597;
+    --uc-identity-color-orange: #ffd7aa;
+    --uc-identity-color-red: #d8464b;
+    --uc-identity-color-pink: #d2696c;
+    --uc-identity-color-purple: #d8464b;
 
     /*  Cascades main color Scheme */
-    --uc-base-color: #1d3337;
-    --uc-highlight-color: #254147;
-    --uc-overlay-color: #2d4f56;
-    --uc-inverted-color: #ebebeb;
-    --uc-muted-color: #c8c8c8;
-    --uc-accent-color: #7aa4a1;
+    --uc-base-color: #131f20;
+    --uc-highlight-color: #223331;
+    --uc-overlay-color: #26403e;
+    --uc-inverted-color: #dbd2c7;
+    --uc-muted-color: #9b9a8c;
+    --uc-accent-color: #568270;
   }
 }
 
